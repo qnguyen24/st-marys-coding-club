@@ -1,0 +1,366 @@
+@charset "utf-8";
+/* CSS Document */
+/* GLOBAL STYLES */
+
+* {
+	font-family: 'Source Sans Pro';
+}
+p {
+	font-family: 'Source Sans Pro';
+	font-weight: 300;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+}
+
+h1, h2 {
+	font-family: 'Oswald';
+	font-weight: 400;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	font-size: 60px;
+}
+a:hover {
+	text-decoration: none;
+}
+form {
+	font-family: 'Poppins';
+	font-weight: 300;
+}
+section {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+section h1 {
+	margin-bottom: 20px;
+	/* font-size: ; */
+}
+/* this is the little orange tick after every seciton header */
+section h1:after {
+	content:"";
+	display: block;
+	width: 50px;
+	height: 2px;
+	background: rgb(219, 148, 9);
+	margin: 15px auto;
+	opacity: 0.8;
+}
+.btn {
+	font-family: 'Poppins';
+	font-weight: 200;
+}
+.bold {
+	font-weight: 500;
+}
+/* 3RD-PARTY CSS OVERRIDE */
+.fa {
+	font-size: 2rem;
+}
+.card {
+	border: none;
+	background: transparent;
+}
+.hvr-underline-from-left:before {
+  background: black;
+  height: 2px;
+}
+/* LANDING PAGE CUSTOM STYLING*/
+@media (min-width: 1100px) {
+		 .jumbotron h1 {
+		 font-size: 4.5rem;
+		}
+}
+.jumbotron {
+	padding-top: 100px;
+}
+.jumbotron {
+	 background-repeat: no-repeat;
+	 background-position: bottom center;
+	 background-size: cover;
+	 background-attachment: fixed;
+	 background-image: url(../_images/jumbotron-dark.jpg);
+	 margin: 0;
+	 padding-top: 150px;
+	 padding-bottom: 200px;
+}
+#pillars .fa {
+	font-size: 2.5rem;
+	padding: 25px;
+	border-radius: 50%;
+	color: white;
+	margin-top: 30px;
+	border: 5px solid rgba(200, 200, 200, 0.5);
+}
+#pillars .card:nth-of-type(1) .fa {
+ background-color: #F90;
+ background: rgb(1, 115, 52);
+}
+#pillars .card:nth-of-type(2) .fa {
+ background-color: #09F;
+ background: rgb(215, 165, 2);
+}
+#pillars .card:nth-of-type(3) .fa {
+ background-color: #393;
+ background: rgb(3, 89, 50);
+}
+#uc-logo {
+	width: 95px;
+	height: 80px;
+	margin: 10px;
+}
+#sm-logo {
+	height: 80px;
+	width: 80px;
+	margin: 10px;
+}
+footer {
+	padding-top: 3%;
+}
+.fa-chevron-down {
+	transition: 0.2s all ease-in-out
+}
+
+
+
+
+
+
+/*NEW curtain navigation*/
+.navbar-brand {
+	font-family: 'Poppins';
+	/* font-family: 'Raleway'; */
+	overflow: visible;
+}
+/*nav color change on scroll*/
+#navbar-wrapper.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
+}
+#navbar-wrapper.scrolled .navbar-brand {
+	color: black;
+}
+#navbar-wrapper.scrolled .button_container:before {
+	color: black;
+}
+#navbar-wrapper.scrolled .button_container span{
+	background: #343a40;
+}
+/*nav-button css*/
+.button_container {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	height: 27px;
+	width: 30px;
+	cursor: pointer;
+	z-index: 100;
+	transition: opacity .25s ease;
+}
+.button_container:before {
+	content: "Menu";
+	text-transform: uppercase;
+	font-family: 'Poppins';
+	font-weight: 300;
+	position: fixed;
+	top: 17px;
+	right: 60px;
+	color: white;
+}
+.button_container:hover {
+	opacity: .7;
+}
+.button_container.active .top {
+	-webkit-transform: translateY(10px) translateX(0) rotate(45deg);
+	transform: translateY(7px) translateX(0) rotate(45deg);
+	background: #343a40;
+}
+.button_container.active .middle {
+	opacity: 0;
+	background: #343a40;
+}
+.button_container.active .bottom {
+	-webkit-transform: translateY(-10px) translateX(0) rotate(-45deg);
+	transform: translateY(-7px) translateX(0) rotate(-45deg);
+	background: #343a40;
+}
+.button_container span {
+	background: white;
+	border-radius: 10px;
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	transition: all .35s ease;
+	cursor: pointer;
+}
+.button_container span:nth-of-type(2) {
+ top: 7px;
+}
+.button_container span:nth-of-type(3) {
+ top: 14px;
+}
+/*start overlay css*/
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	visibility: hidden;
+ transition: opacity .35s, visibility .35s, width .35s;
+	z-index: 50;
+}
+.overlay:before {
+	content: '';
+	background: #28a745;
+	background: #FFF;
+	left: -55%;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	position: absolute;
+ transition: left .35s ease;
+}
+.overlay:after {
+	content: '';
+	background: #28a745;
+	background: #FFF;
+	right: -55%;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	position: absolute;
+ transition: all .35s ease;
+}
+.overlay.open {
+	opacity: .9;
+	visibility: visible;
+	height: 100%;
+}
+.overlay.open:before {
+	left: 0;
+}
+.overlay.open:after {
+	right: 0;
+}
+.overlay.open li {
+ -webkit-animation: fadeInRight .5s ease forwards;
+ animation: fadeInRight .5s ease forwards;
+ -webkit-animation-delay: .35s;
+ animation-delay: .35s;
+}
+.overlay.open li:nth-of-type(2) {
+ -webkit-animation-delay: .45s;
+ animation-delay: .45s;
+}
+.overlay.open li:nth-of-type(3) {
+ -webkit-animation-delay: .55s;
+ animation-delay: .55s;
+}
+.overlay.open li:nth-of-type(4) {
+ -webkit-animation-delay: .65s;
+ animation-delay: .65s;
+}
+.overlay nav {
+	position: relative;
+	height: 70%;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	font-size: 2.2rem;
+	font-family: 'Poppins';
+	font-weight: 300;
+	text-align: center;
+	z-index: 100;
+}
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	position: relative;
+	height: 100%;
+}
+.overlay ul li {
+	display: block;
+	height: calc(100% / 5);
+	min-height: 40px;
+	position: relative;
+	opacity: 0;
+}
+.overlay ul li a {
+	display: block;
+	position: relative;
+	color: #343a40;
+	text-decoration: none;
+	overflow: hidden;
+}
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+	width: 100%;
+}
+.overlay ul li a:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	height: 1px;
+	background: #000;
+	transition: .35s;
+}
+/*for the social media buttons at the bottom of the navigation*/
+.social-media-nav li {
+	display: inline-block !important;
+	margin-top: 10px;
+}
+.social-media-nav a:after {
+	display: none;
+}
+.social-media-nav span {
+	font-size: 25px;
+}
+/*animations for curtain navigation*/
+ @-webkit-keyframes fadeInRight {
+ 0% {
+ opacity: 0;
+ left: 20%;
+}
+ 100% {
+ opacity: 1;
+ left: 0;
+}
+}
+ @keyframes fadeInRight {
+ 0% {
+ opacity: 0;
+ left: 20%;
+}
+ 100% {
+ opacity: 1;
+ left: 0;
+}
+}
+/*personal animations toggled by class*/
+.about-turn {
+    transform: rotate(-180deg);
+}
+
+
+/*
+.why-code-list li {
+	list-style: none;
+	padding: 5px 10px;
+}
+.why-code-list li:before {
+	font-family: 'FontAwesome';
+	content: '\f00c';
+	margin:0 10px 0 -15px;
+	color: #0C3;
+}
+*/

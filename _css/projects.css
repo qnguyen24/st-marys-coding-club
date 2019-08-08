@@ -1,0 +1,39 @@
+.jumbotron {
+    background-image: url(../_images/jumbotron-dark.jpg);
+    background-image: url(../_images/thomas-tastet-1056492-unsplash.jpg);
+}
+
+/* this is for the link going to the actual sketch */
+.card a {
+    overflow: hidden;    	 	
+    -webkit-box-shadow: 0px 10px 40px -10px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 10px 40px -10px rgba(0,0,0,0.6);
+    box-shadow: 0px 10px 40px -10px rgba(0,0,0,0.6);
+    border-radius: 30px;
+    border: 2px solid #343a40;
+    height: 300px;
+    background-repeat: no-repeat;
+	background-position: center;
+    background-size: cover;
+    transition: -moz-box-shadow ease-in-out 0.3s, box-shadow ease-in-out 0.3s, -webkit-box-shadow ease-in-out 0.3s;
+    transition: 0.3s linear;
+}
+.card a:hover {
+    /* makes shadow longer when thumbnail is lifted */
+    -webkit-box-shadow: 0px 20px 40px -10px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 20px 40px -10px rgba(0,0,0,0.6);
+    box-shadow: 0px 20px 40px -10px rgba(0,0,0,0.6);
+}
+
+/* setting background for successive thumbnails */
+.card:nth-of-type(1) a {
+    background-image: url(../_images/oplogotest.JPG);
+}
+
+.card:nth-of-type(2) a {
+    background-image: url(../_images/connect4.JPG);
+}
+
+.card:nth-of-type(3) a {
+    background-image: url(../_images/pong.JPG);
+}
