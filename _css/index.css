@@ -12,12 +12,14 @@ p {
 	line-height: 1.8rem;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	font-family: 'Oswald';
 	font-weight: 400;
 	letter-spacing: 4px;
 	text-transform: uppercase;
-	font-size: 60px;
+}
+h2 {
+	font-size: 40px;
 }
 a:hover {
 	text-decoration: none;
@@ -91,16 +93,16 @@ section h1:after {
 	border: 5px solid rgba(200, 200, 200, 0.5);
 }
 #pillars .card:nth-of-type(1) .fa {
- background-color: #F90;
- background: rgb(1, 115, 52);
+background-color: #F90;
+background: rgb(1, 115, 52);
 }
 #pillars .card:nth-of-type(2) .fa {
- background-color: #09F;
- background: rgb(215, 165, 2);
+background-color: #09F;
+background: rgb(215, 165, 2);
 }
 #pillars .card:nth-of-type(3) .fa {
- background-color: #393;
- background: rgb(3, 89, 50);
+background-color: #393;
+background: rgb(3, 89, 50);
 }
 #uc-logo {
 	width: 95px;
@@ -132,11 +134,11 @@ footer {
 }
 /*nav color change on scroll*/
 #navbar-wrapper.scrolled {
-  background-color: #fff !important;
-  transition: background-color 200ms linear;
-  -webkit-box-shadow: 0 8px 6px -6px #999;
-  -moz-box-shadow: 0 8px 6px -6px #999;
-  box-shadow: 0 8px 6px -6px #999;
+background-color: #fff !important;
+transition: background-color 200ms linear;
+-webkit-box-shadow: 0 8px 6px -6px #999;
+-moz-box-shadow: 0 8px 6px -6px #999;
+box-shadow: 0 8px 6px -6px #999;
 }
 #navbar-wrapper.scrolled .navbar-brand {
 	color: black;
@@ -197,10 +199,10 @@ footer {
 	cursor: pointer;
 }
 .button_container span:nth-of-type(2) {
- top: 7px;
+top: 7px;
 }
 .button_container span:nth-of-type(3) {
- top: 14px;
+top: 14px;
 }
 /*start overlay css*/
 .overlay {
@@ -211,7 +213,7 @@ footer {
 	height: 100%;
 	opacity: 1;
 	visibility: hidden;
- transition: opacity .35s, visibility .35s, width .35s;
+transition: opacity .35s, visibility .35s, width .35s;
 	z-index: 50;
 }
 .overlay:before {
@@ -223,7 +225,7 @@ footer {
 	width: 50%;
 	height: 100%;
 	position: absolute;
- transition: left .35s ease;
+transition: left .35s ease;
 }
 .overlay:after {
 	content: '';
@@ -234,7 +236,7 @@ footer {
 	width: 50%;
 	height: 100%;
 	position: absolute;
- transition: all .35s ease;
+transition: all .35s ease;
 }
 .overlay.open {
 	opacity: .9;
@@ -248,22 +250,22 @@ footer {
 	right: 0;
 }
 .overlay.open li {
- -webkit-animation: fadeInRight .5s ease forwards;
- animation: fadeInRight .5s ease forwards;
- -webkit-animation-delay: .35s;
- animation-delay: .35s;
+-webkit-animation: fadeInRight .5s ease forwards;
+animation: fadeInRight .5s ease forwards;
+-webkit-animation-delay: .35s;
+animation-delay: .35s;
 }
 .overlay.open li:nth-of-type(2) {
- -webkit-animation-delay: .45s;
- animation-delay: .45s;
+-webkit-animation-delay: .45s;
+animation-delay: .45s;
 }
 .overlay.open li:nth-of-type(3) {
- -webkit-animation-delay: .55s;
- animation-delay: .55s;
+-webkit-animation-delay: .55s;
+animation-delay: .55s;
 }
 .overlay.open li:nth-of-type(4) {
- -webkit-animation-delay: .65s;
- animation-delay: .65s;
+-webkit-animation-delay: .65s;
+animation-delay: .65s;
 }
 .overlay nav {
 	position: relative;
@@ -326,41 +328,27 @@ footer {
 	font-size: 25px;
 }
 /*animations for curtain navigation*/
- @-webkit-keyframes fadeInRight {
- 0% {
- opacity: 0;
- left: 20%;
+@-webkit-keyframes fadeInRight {
+0% {
+opacity: 0;
+left: 20%;
 }
- 100% {
- opacity: 1;
- left: 0;
+100% {
+opacity: 1;
+left: 0;
 }
 }
- @keyframes fadeInRight {
- 0% {
- opacity: 0;
- left: 20%;
+@keyframes fadeInRight {
+0% {
+opacity: 0;
+left: 20%;
 }
- 100% {
- opacity: 1;
- left: 0;
+100% {
+opacity: 1;
+left: 0;
 }
 }
 /*personal animations toggled by class*/
 .about-turn {
-    transform: rotate(-180deg);
+	transform: rotate(-180deg);
 }
-
-
-/*
-.why-code-list li {
-	list-style: none;
-	padding: 5px 10px;
-}
-.why-code-list li:before {
-	font-family: 'FontAwesome';
-	content: '\f00c';
-	margin:0 10px 0 -15px;
-	color: #0C3;
-}
-*/
