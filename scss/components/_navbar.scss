@@ -1,0 +1,23 @@
+
+.navbar {
+    .nav-item {
+        .nav-link {
+            color: white !important;
+        }
+        .active {
+            background: $accent-color;
+            color: white;
+        }
+    }
+}
+/*nav color change on scroll*/
+#navbar-wrapper.scrolled {
+    .nav-link {
+        color: black !important;
+    }
+    background-color: rgba(255,255,255,0.8) !important;
+    transition: background-color 200ms ease-in-out;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+}

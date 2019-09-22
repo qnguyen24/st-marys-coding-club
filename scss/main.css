@@ -1,0 +1,96 @@
+form input {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.navbar .nav-item .nav-link {
+  color: white !important;
+}
+
+.navbar .nav-item .active {
+  background: #035932;
+  color: white;
+}
+
+/*nav color change on scroll*/
+#navbar-wrapper.scrolled {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
+}
+
+#navbar-wrapper.scrolled .nav-link {
+  color: black !important;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "Scope One";
+}
+
+h1 {
+  font-family: "IBM Plex Sans";
+  text-transform: uppercase;
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 32px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+p, li, .btn {
+  font-family: "Titillium Web";
+  font-size: 16px;
+}
+
+hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.fa {
+  font-size: 50px;
+  color: #035932;
+  margin: 30px;
+}
+
+.jumbotron {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(../images/jumbotron-keyboard-hand-dark.jpg);
+  padding-top: 120px;
+  padding-bottom: 0px;
+}
+
+.jumbotron .fa {
+  font-size: 30px;
+}
+
+.jumbotron h1 {
+  font-size: 50px;
+}
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#cta {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  background-attachment: static;
+  background-image: url(../images/jumbotron-keyboard.jpg);
+}
+
+#team img {
+  width: 150px;
+}
+/*# sourceMappingURL=main.css.map */

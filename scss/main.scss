@@ -1,0 +1,64 @@
+//main SASS file for concepttester
+
+@import "helper/variables";
+@import "helper/mixins";
+@import "components/buttons";
+@import "components/forms";
+@import "components/navbar";
+
+
+h2, h3, h4, h5, h6 {
+    font-family: $sub-heading-font;
+}
+
+h1 {
+    font-family: $heading-font;
+    // letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+h2 {
+    font-size: 32px;
+    @include py(15px,15px);
+}
+p, li, .btn {
+    font-family: $body-font;
+    font-size: 16px;
+}
+
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.fa {
+    font-size: 50px;
+    color: rgb(3, 89, 50);
+    margin: 30px;
+}
+.jumbotron {    
+    @include bg-image("jumbotron-keyboard-hand-dark.jpg",fixed);
+    @include py(120px,0px);
+    .fa {
+        font-size: 30px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+}
+
+section {
+    @include py(60px,60px);
+}
+
+#cta {
+    @include bg-image("jumbotron-keyboard.jpg");
+}
+
+#team {
+    img {
+        width: 150px;
+    }
+}

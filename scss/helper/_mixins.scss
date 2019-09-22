@@ -1,0 +1,12 @@
+@mixin bg-image($filename, $attachment:static) {
+    background-repeat: no-repeat;
+	background-position: bottom center;
+    background-size: cover;
+    background-attachment: $attachment;
+    background-image: url(../images/#{$filename});
+}
+
+@mixin py($padding-top,$padding-bottom) {
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+}
