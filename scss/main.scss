@@ -9,32 +9,42 @@
 
 h2, h3, h4, h5, h6 {
     font-family: $sub-heading-font;
+    font-weight: 300;
 }
 
 h1 {
     font-family: $heading-font;
     // letter-spacing: 2px;
     text-transform: uppercase;
-    font-size: 42px;
+    font-size: 2.8rem;
     font-weight: 500;
     margin-bottom: 30px;
 }
 h2 {
-    font-size: 32px;
+    font-size: 2rem;
     @include py(15px,15px);
+}
+h3 {
+    @include py(10px, 10px);
 }
 p, li, .btn {
     font-family: $body-font;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+ul {
+    list-style: none;
 }
 
-
+.badge-success {
+    background: $accent-color;
+}
 hr {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 .fa {
-    font-size: 50px;
+    font-size: 18px;
     color: rgb(3, 89, 50);
     margin: 30px;
 }
@@ -42,22 +52,24 @@ hr {
     @include bg-image("jumbotron-keyboard-hand-dark.jpg",fixed);
     @include py(120px,0px);
     .fa {
-        font-size: 30px;
+        font-size: 20px;
     }
-    h1 {
-        font-size: 50px;
-    }
-    hr {
-        border-color: white !important;
-    }
+//     h1 {
+//         font-size: 3rem;
+//     }
 }
 
 section {
     @include py(60px,60px);
+    h1 {
+        font-family: 'Open Sans';
+        text-transform: none;
+        font-weight: 400;
+    }
 }
 
 #cta {
-    @include bg-image("jumbotron-keyboard.jpg");
+    // @include bg-image("jumbotron-keyboard.jpg");
 }
 
 #team {
@@ -65,3 +77,42 @@ section {
         width: 150px;
     }
 }
+#bounce-arrow:hover {
+    color: white !important;
+    background-color: #343a40 !important;
+    transition: ease-in-out 0.3s;
+}
+#smcc-advantage {
+    .fa {
+        font-size: 2.5rem;
+    }
+}
+.lead {
+    font-size: 1.125rem;
+}
+// RESPONSIVE FONT-SIZES
+// @media (min-width: 360px) {
+//     body {
+//         font-size: 14px;
+//     }
+
+// }
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) {
+
+// }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    body {
+        font-size: 18px;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+
+// }
+
+

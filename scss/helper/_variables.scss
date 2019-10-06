@@ -3,7 +3,10 @@
 $main-text-color: white;
 $accent-color: rgb(3, 89, 50);
 
-$body-font: 'Titillium Web';
-$heading-font: 'IBM Plex Sans';
-$sub-heading-font: 'Scope One';
+// $body-font: 'Titillium Web';
+$body-font: 'Open Sans';
+// $heading-font: 'IBM Plex Sans';
+$heading-font: 'Raleway';
+// $sub-heading-font: 'Scope One';
+$sub-heading-font: $body-font;
 // $sub-heading-font: 'Libre Franklin';

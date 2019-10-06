@@ -14,7 +14,7 @@ form input {
 
 /*nav color change on scroll*/
 #navbar-wrapper.scrolled {
-  background-color: rgba(255, 255, 255, 0.8) !important;
+  background-color: rgba(255, 255, 255, 0.95) !important;
   -webkit-transition: background-color 200ms ease-in-out;
   transition: background-color 200ms ease-in-out;
   -webkit-box-shadow: 0 8px 6px -6px #999;
@@ -25,27 +25,46 @@ form input {
   color: black !important;
 }
 
+#navbar-wrapper.scrolled .nav-link:hover {
+  border-bottom: 1px solid green;
+}
+
 h2, h3, h4, h5, h6 {
-  font-family: "Scope One";
+  font-family: "Open Sans";
+  font-weight: 300;
 }
 
 h1 {
-  font-family: "IBM Plex Sans";
+  font-family: "Raleway";
   text-transform: uppercase;
-  font-size: 42px;
+  font-size: 2.8rem;
   font-weight: 500;
   margin-bottom: 30px;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 2rem;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
+h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 p, li, .btn {
-  font-family: "Titillium Web";
-  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.badge-success {
+  background: #035932;
 }
 
 hr {
@@ -54,7 +73,7 @@ hr {
 }
 
 .fa {
-  font-size: 50px;
+  font-size: 18px;
   color: #035932;
   margin: 30px;
 }
@@ -70,15 +89,7 @@ hr {
 }
 
 .jumbotron .fa {
-  font-size: 30px;
-}
-
-.jumbotron h1 {
-  font-size: 50px;
-}
-
-.jumbotron hr {
-  border-color: white !important;
+  font-size: 20px;
 }
 
 section {
@@ -86,15 +97,34 @@ section {
   padding-bottom: 60px;
 }
 
-#cta {
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: cover;
-  background-attachment: static;
-  background-image: url(../images/jumbotron-keyboard.jpg);
+section h1 {
+  font-family: 'Open Sans';
+  text-transform: none;
+  font-weight: 400;
 }
 
 #team img {
   width: 150px;
+}
+
+#bounce-arrow:hover {
+  color: white !important;
+  background-color: #343a40 !important;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+#smcc-advantage .fa {
+  font-size: 2.5rem;
+}
+
+.lead {
+  font-size: 1.125rem;
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

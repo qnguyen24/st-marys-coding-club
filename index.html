@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="scss/hover.css">
   <link rel="stylesheet" href="css3-animate-it-master/css3-animate-it-master/css/animations.css">
   <link rel="stylesheet" type="text/css"
-    href="https://fonts.googleapis.com/css?family=Source Sans Pro:300,400,500|Titillium+Web|Scope+One|Libre+Franklin|IBM+Plex+Sans:100,100i,400,400i,500,600|Montserrat:300,400,500|Oswald:300,400,500|Raleway:300,400|Roboto:300,400,500|Poppins:200,300,400,500|IBM+Plex+Mono|IBM+Plex+Sans:300">
+    href="https://fonts.googleapis.com/css?family=Source Sans Pro:300,400,500|Titillium+Web|Scope+One|Libre+Franklin|IBM+Plex+Sans:100,100i,400,400i,500,600|Montserrat:300,400,500|Oswald:300,400,500|Raleway:300,400|Roboto:300,400,500|Poppins:200,300,400,500|IBM+Plex+Mono|IBM+Plex+Sans:300|Open+Sans:300,400,500,600">
   <!--Custom-->
   <link rel="icon" href="images/stmarys-logo-transparent.png" />
   <link href="scss/main.css" rel="stylesheet" type="text/css" />
@@ -34,13 +34,13 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="#mission">Mission</a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="https://www.openprocessing.org/user/169324/">Projects</a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
@@ -75,11 +75,11 @@
     <div class="container">
       <div class="row align-items-center justify-content-md-center">
 
-        <div class="col-md-8 welcome-blurb">
-          <h1 class="text-white animated fadeInUpShort">The St. Mary's Coding Club</h1>
-          <h2 class="text-white animated fadeInUpShort delay-250">Learn. Create. Belong.</h2>
-          <hr style="color:white !important;">
-          <p class="lead text-white">Join us Tuesdays and Thursdays in the ComTech room!</p>
+        <div class="col-md-8 welcome-blurb my-3">
+          <p class="text-white animated fadeInDownShort delay-250">LEARN. CREATE. BELONG.</p>
+          <h1 class="text-white animated fadeInUpShort delay-250">The St. Mary's Coding Club</h1>
+          <!-- <hr class="animated fadeInUpShort delay-500"> -->
+          <!-- <code class="text-white animated fadeInUpShort delay-500">Join us Tuesdays and Thursdays at lunch in the ComTech room!</code> -->
 
           <!-- <div class="animated fadeInUpShort delay-250 col-md-8 announcements bg-white p-3 rounded mt-5">
             <h3 class="mb-3"><u>Announcements</u></h3>
@@ -88,56 +88,60 @@
           </div> -->
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 my-3">
 
-          <form name="registration" method="POST" data-netlify="true" class="bg-white container bg-light rounded p-3">
-            <h2 class="text-center">Join the club</h2>
+          <form name="registration" method="POST" data-netlify="true"
+            class="bg-white container bg-light rounded p-3 text-center">
+            <h2>Join the club</h2>
             <div class="form-row">
               <div class="form-group col-12">
-                <label for="inputName">Name</label>
-                <input type="text" name="Name" class="form-control" id="inputName" placeholder="e.g. John Smith">
+                <!-- <label for="inputName">Name</label> -->
+                <input type="text" name="Name" class="form-control" id="inputName" placeholder="Enter your name">
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-group col-12">
-                <label for="inputAddress">Email</label>
-                <input type="email" name="Email" class="form-control" id="inputAddress"
-                  placeholder="someone@learn.cssd.ab.ca">
+                <!-- <label for="inputAddress">Email</label> -->
+                <input type="email" name="Email" class="form-control" id="inputAddress" placeholder="Enter your email">
               </div>
             </div>
             <div class="form-row">
               <div class="form-group col-12">
-                <label for="inputState">Grade</label>
+                <!-- <label for="inputState">Grade</label> -->
                 <select name="Grade" id="inputState" class="form-control">
-                  <option selected>Choose...</option>
+                  <option selected>Select your grade...</option>
                   <option value="10">10</option>
                   <option value="11">11</option>
                   <option value="12">12</option>
                 </select>
               </div>
             </div>
-            <div class="form-row">
+            <div class="form-row text-center">
               <div class="form-group col-12">
-                <label for="exampleFormControlTextarea1">If I could code...</label>
+                <label for="exampleFormControlTextarea1" class="text-center">
+                  <p>If I could code...</p>
+                </label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                   placeholder="Complete the statement!" name="Message"></textarea>
               </div>
             </div>
-            <button type="submit" class="btn btn-dark col-12">Register</button>        
+            <button type="submit" class="btn btn-success">Register</button>
           </form>
         </div>
       </div>
 
       <div class="row justify-content-center">
-        <a href="#code-video"><span class="fa fa-chevron-down text-white my-5" id="bounce-arrow"></span></a>
+        <a href="#code-video"><span
+            class="fa fa-chevron-down bg-white text-dark my-5 rounded-circle p-3 animated fadeInDownShort delay-250"
+            id="bounce-arrow"></span></a>
       </div>
     </div>
   </header>
 
   <section class="container-fluid text-center" id="code-video">
     <div class="container">
-      <h1>Could coding change your life?</h1>
+      <h1>What's in it for you?</h1>
       <div class="row justify-content-center">
         <div class="embed-responsive embed-responsive-16by9 col-md-10">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/nKIu9yen5nc" frameborder="0"
@@ -151,10 +155,13 @@
   <section class="container-fluid">
     <div class="container">
 
-      <h1 class="text-left border-bottom border-dark">Learn how to code</h1>
-      <p class="text-center">Learn to code at our lunchtime meetings on <strong>Tuesdays</strong> and <strong>Thursdays</strong> led by your club Leaders. <u>Both meetings in a week are the same</u>, in case you can only make it to one.
-        Since each new topic builds on the one before it, join at the beginning of the school year for the best
-        experience.</p>
+      <div class="row justify-content-center">
+        <h1 class="text-center col-12">Learn how to code</h1>
+        <p class="text-center col-md-8 lead">Learn on <strong>Tuesdays</strong> and <strong>Thursdays</strong> at lunch
+          in the ComTech room. <u>Both meetings in a week are the same</u>, in case you can only make it to one.
+        </p>
+      </div>
+
 
       <div class="row justify-content-center mt-5">
         <div class="col-md-6">
@@ -162,7 +169,9 @@
           <p>We teach you these topics through our lunch meetings incrementally throughout the year. Each topic is
             accompanied by a variety of activities for you to apply what you've learned and fill in any gaps in
             knowledge. Learning these topics gives you the basic tools for creating your own cool projects. With this
-            foundation, you can confidently learn new skills and take on new challenges.</p>
+            foundation, you can confidently learn new skills and take on new challenges. Since each new topic builds on
+            the one before it, join at the beginning of the school year for the best
+            experience.</p>
         </div>
         <div class="col-md-6 animatedParent animateOnce">
           <div class="col animated fadeInUpShort">
@@ -191,13 +200,13 @@
       <hr>
 
       <div class="row justify-content-center">
-        <div class="col-md-6 order-md-2 text-right">
+        <div class="col-md-6 order-md-2 text-justified">
           <h2>The St. Mary's Coding Club Advantage</h2>
-          <p>Joining the St. Mary's Coding Club beats learning to code online by yourself in many ways. We streamline
+          <p>Learning with us beats learning to code online by yourself. We streamline
             the learning process by setting and supporting a clear path towards mastery of the foundations of
-            programming. With us, you can focus on learning rather than figuring out the best way to learn.</p>
+            programming. With Coding Club, you can focus on learning rather than figuring out the best way to learn.</p>
         </div>
-        <div class="col-md-6 order-md-1 text-center">
+        <div class="col-md-6 order-md-1 text-center" id="smcc-advantage">
           <div class="row justify-content-center animatedParent animateOnce">
             <div class="col-md-6 animated flipInY delay-500">
               <span class="fa fa-laptop"></span>
@@ -217,7 +226,7 @@
             <div class="col-md-6 animated flipInY delay-1250">
               <span class="fa fa-graduation-cap"></span>
               <h4>Instant Mentor access</h4>
-              <p>Gain access to St. Mary's alumni still giving back to the Club.</p>
+              <p>Connect with St. Mary's alumni still giving back to the Club.</p>
             </div>
           </div>
         </div>
@@ -234,15 +243,17 @@
         </div>
         <div class="col-md-6">
           <div class="row text-center justify-content-around animatedParent animateOnce">
-            <div class="col-md-5 border border-dark rounded p-3 m-3 animated tada delay-500">
+            <div class="col-md-10 border shadow rounded m-3 p-3 animated fadeInDownShort delay-500">
               <h3>PowerPoint Presentations</h3>
-              <p>Our club-made PowerPoints take you through every step of the way with lots of examples.</p>
-              <a href="" class="btn btn-success disabled">Download Presentations<br>(Coming soon!)</a>
+              <p>Our detailed PowerPoints get into the specifics with plenty of examples. More are on the way!</p>
+              <p class="text-center">1. Introduction to Processing <a href="/ppt/1 - Introduction To Processing.pptx" download><span class="fa fa-download"></span></a>
+              </p>
+
             </div>
-            <div class="col-md-5 border border-dark rounded p-3 m-3 animated tada delay-750">
+            <div class="col-md-10 border shadow rounded p-3 m-3 animated fadeInDownShort delay-750">
               <h3>Crash Courses</h3>
-              <p>Our club-made crash courses get straight to the point and are great as a quick reference.</p>
-              <a href="" class="btn btn-warning disabled">Go to Crash Courses<br>(Coming soon!)</a>
+              <span class="badge badge-primary mb-4">Coming soon</span>
+              <p>Our crash courses get straight to the point and are great as a quick reference.</p>
             </div>
           </div>
         </div>
@@ -253,17 +264,18 @@
 
   <section class="container-fluid text-center">
     <div class="container">
-      <h1 class="text-right border-bottom border-dark">Unleash your creativity</h1>
-      <p>Now that you can code, put those skills to use in your very own project!</p>
+      <h1 class="text-center">Unleash your creativity</h1>
+      <p class="lead">With your newly acquired coding toolbox, show the world what you're made of with your very own
+        project!</p>
       <div class="row justify-content-around animatedParent animateOnce">
-        <div class="col-md-4 border border-warning rounded p-5 my-3 animated flipInX">
+        <div class="col-md-4 border shadow rounded p-5 my-3 animated flipInX">
           <h3>Create with Processing</h3>
           <img src="images/projects-thumbnail.png" class="my-3 col-12" />
           <p>Use Processing to make an app or a game with other club members.</p>
           <a href="https://www.openprocessing.org/user/169324/" target="_blank" class="btn btn-warning">Check out our
             projects</a>
         </div>
-        <div class="col-md-4 border border-info rounded p-5 my-3 animated flipInX delay-250">
+        <div class="col-md-4 border shadow rounded p-5 my-3 animated flipInX delay-250">
           <h3>Create with Arduino</h3>
           <span class="badge badge-primary">New</span>
           <img src="images/arduino-uno.png" class="my-3 col-12" />
@@ -278,8 +290,9 @@
 
   <section class="container-fluid text-center">
     <div class="container">
-      <h1 class="text-left border-bottom border-dark">Belong to our community</h1>
-      <p>The St. Mary's Coding Club organizes events throughout the year to put your coding skills to the test while
+      <h1 class="text-center">Belong to our community</h1>
+      <p class="lead">The St. Mary's Coding Club organizes events throughout the year to put your coding skills to the
+        test while
         having a ton of fun!</p>
       <div class="row justify-content-center animatedParent animateOnce">
         <div class="card text-white bg-success m-3 animated fadeInLeft delay-250" style="max-width: 18rem;">
@@ -323,59 +336,63 @@
 
   <section class="container-fluid text-left" id="team">
     <div class="container">
-      <h1 class="text-right border-bottom border-dark">Always supported by our team</h1>
-      <div class="row">
-        <div class="col-md-6">
-          <h2>Leaders</h2>
-          <p>Leaders are fellow St. Mary's students who bring you the Coding Club experience. They are responsible for
-            leading club meetings, organizing events, and all things associated with managing the St. Mary's Coding
-            Club. They are your first point of contact for everything Coding Club.
-          </p>
-        </div>
-        <div class="col-md-6 animatedParent animateOnce">
+      <h1 class="text-center">Always supported by our team</h1>
+      <p class="lead text-center">You're backed by a strong group of Leaders and Mentors that's always ready to listen and help
+        out.</p>
 
-          <div
-            class="row no-gutters justify-content-center align-items-center shadow rounded my-3 py-3 animated fadeInUpShort">
-            <div class="col-md-4">
-              <div class="row align-items-center justify-content-center">
-                <img src="images/smlogomod1.jpg" class="card-img" alt="...">
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title border-bottom border-success">Dawson van Vlaanderen</h5>
-                <p class="card-text">Dawson is an Extended French student at St. Mary's who is fascinated by the world
-                  of code. He is always finding new ways to apply coding to problems we encounter in our daily lives.
-                </p>
-                <p class="card-text"><small class="text-muted">Joined Sep 2018</small></p>
-              </div>
-            </div>
-          </div>
 
-          <div
-            class="row no-gutters justify-content-center align-items-center shadow rounded my-3 py-3 animated fadeInUpShort delay-250">
-            <div class="col-md-4">
-              <div class="row align-items-center justify-content-center">
-                <img src="images/smlogomod1.jpg" class="card-img" alt="...">
+        
+        <h2>Leaders</h2>
+        <p>Leaders are fellow St. Mary's students who bring you the Coding Club experience. They are responsible for
+          leading club meetings, organizing events, and all things associated with managing the St. Mary's Coding
+          Club. They are your first point of contact for everything Coding Club.
+        </p>
+        <div class="row animatedParent animateOnce">
+            
+          <div class="col-md-6">
+            <div
+              class="row no-gutters justify-content-center align-items-center border shadow rounded my-3 py-3 animated fadeInUpShort">
+              <div class="col-md-4">
+                <div class="row align-items-center justify-content-center">
+                  <img src="images/smlogomod1.jpg" class="card-img" alt="...">
+                </div>
               </div>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title border-bottom border-success">Francisco Benavides</h5>
-                <p class="card-text">Francisco is a Full IB Extended French student at St. Mary's who is passionate
-                  about teaching people how to code. He also has experience coding with Python.</p>
-                <p class="card-text"><small class="text-muted">Joined Sep 2018</small></p>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title border-bottom border-success">Dawson van Vlaanderen</h5>
+                  <p class="card-text">Dawson is an Extended French student at St. Mary's who is fascinated by the world
+                    of code. He is always finding new ways to apply coding to problems we encounter in our daily lives.
+                  </p>
+                  <p class="card-text"><small class="text-muted">Joined Sep 2018</small></p>
+                </div>
               </div>
             </div>
           </div>
 
+          <div class="col-md-6">
+            <div
+              class="row no-gutters justify-content-center align-items-center border shadow rounded my-3 py-3 animated fadeInUpShort delay-250">
+              <div class="col-md-4">
+                <div class="row align-items-center justify-content-center">
+                  <img src="images/smlogomod1.jpg" class="card-img" alt="...">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title border-bottom border-success">Francisco Benavides</h5>
+                  <p class="card-text">Francisco is a Full IB Extended French student at St. Mary's who is passionate
+                    about teaching people how to code. He also has experience coding with Python.</p>
+                  <p class="card-text"><small class="text-muted">Joined Sep 2018</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-      </div>
 
-      <hr>
+          <hr>
 
-      <div class="row">
-        <div class="col-md-6">
+
           <h2>Mentors</h2>
           <p>Mentors are St. Mary's alumni who continue giving back to the Club. They provide quick support for
             your coding questions and are open to discussing the career paths they have chosen as well. They also work
@@ -383,82 +400,93 @@
             the scenes to bring new opportunities to Coding Club members and enrich the Coding Club experience by
             coaching the Leaders.
           </p>
+
+          <div class="row animatedParent animateOnce">
+
+            <div class="col-md-6">
+              <div
+                class="row no-gutters justify-content-center align-items-center border shadow rounded my-3 py-3 animated fadeInUpShort">
+                <div class="col-md-4">
+                  <div class="row align-items-center justify-content-center">
+                    <img src="images/ucalgary-logo.png" class="card-img" alt="...">
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title border-bottom border-danger">Quang Nguyen</h5>
+                    <p class="card-text">Quang is in his 3rd year of Mechanical Engineering with a Specialization in
+                      Biomedical Engineering at the University of Calgary.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Joined Jan 2018 (Co-founder)</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div
+                class="row no-gutters justify-content-center align-items-center border shadow rounded my-3 py-3 animated fadeInUpShort delay-250">
+                <div class="col-md-4">
+                  <div class="row align-items-center justify-content-center">
+                    <img src="images/ucalgary-logo.png" class="card-img" alt="...">
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title border-bottom border-danger">Andreas Brown</h5>
+                    <p class="card-text">Andreas is in his 3rd year of Geomatics Engineering at the University of
+                      Calgary.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Joined Jan 2018 (Co-founder)</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div
+                class="row no-gutters justify-content-center align-items-center border shadow rounded my-3 py-3 animated fadeInUpShort delay-500">
+                <div class="col-md-4">
+                  <div class="row align-items-center justify-content-center">
+                    <img src="images/ubc-logo.png" class="card-img" alt="...">
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title border-bottom border-primary">Kyle van Winkoop</h5>
+                    <p class="card-text">Kyle is starting his first year of Engineering at the University of British
+                      Columbia. He was the very first Leader of the St. Mary's Coding Club.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Joined Jan 2018 (Co-founder)</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div
+                class="row no-gutters justify-content-center align-items-center border shadow rounded my-3 py-3 animated fadeInUpShort delay-750">
+                <div class="col-md-4">
+                  <div class="row align-items-center justify-content-center">
+                    <img src="images/waterloo-logo.png" class="card-img" alt="...">
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title border-bottom border-warning">Cesar Genatios</h5>
+                    <p class="card-text">Cesar is in his 3rd year of Biomedical Engineering at the University of
+                      Waterloo.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Joined Aug 2019</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
         </div>
-
-        <div class="col-md-6 animatedParent animateOnce">
-
-          <div
-            class="row no-gutters justify-content-center align-items-center shadow rounded my-3 py-3 animated fadeInUpShort">
-            <div class="col-md-4">
-              <div class="row align-items-center justify-content-center">
-                <img src="images/ucalgary-logo.png" class="card-img" alt="...">
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title border-bottom border-danger">Quang Nguyen</h5>
-                <p class="card-text">Quang is in his 3rd year of Mechanical Engineering with a Specialization in
-                  Biomedical Engineering at the University of Calgary.
-                </p>
-                <p class="card-text"><small class="text-muted">Joined Jan 2018 (Co-founder)</small></p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="row no-gutters justify-content-center align-items-center shadow rounded my-3 py-3 animated fadeInUpShort delay-250">
-            <div class="col-md-4">
-              <div class="row align-items-center justify-content-center">
-                <img src="images/ucalgary-logo.png" class="card-img" alt="...">
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title border-bottom border-danger">Andreas Brown</h5>
-                <p class="card-text">Andreas is in his 3rd year of Geomatics Engineering at the University of Calgary.
-                </p>
-                <p class="card-text"><small class="text-muted">Joined Jan 2018 (Co-founder)</small></p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="row no-gutters justify-content-center align-items-center shadow rounded my-3 py-3 animated fadeInUpShort delay-500">
-            <div class="col-md-4">
-              <div class="row align-items-center justify-content-center">
-                <img src="images/ubc-logo.png" class="card-img" alt="...">
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title border-bottom border-primary">Kyle van Winkoop</h5>
-                <p class="card-text">Kyle is starting his first year of Engineering at the University of British
-                  Columbia. He was the very first Leader of the St. Mary's Coding Club.
-                </p>
-                <p class="card-text"><small class="text-muted">Joined Jan 2018 (Co-founder)</small></p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="row no-gutters justify-content-center align-items-center shadow rounded my-3 py-3 animated fadeInUpShort delay-750">
-            <div class="col-md-4">
-              <div class="row align-items-center justify-content-center">
-                <img src="images/waterloo-logo.png" class="card-img" alt="...">
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title border-bottom border-warning">Cesar Genatios</h5>
-                <p class="card-text">Cesar is in his 3rd year of Biomedical Engineering at the University of Waterloo.
-                </p>
-                <p class="card-text"><small class="text-muted">Joined Aug 2019</small></p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
     </div>
   </section>
 
@@ -481,24 +509,23 @@
     </div>
   </section>
 
-  <section class="container-fluid text-left text-white" id="cta">
-    <div class="container">
+  <section class="container-fluid text-center" id="cta">
+    <div class="container border border-dark p-5">
       <h1 class="display-5 text-center col-12">Become a member. Start coding today.</h1>
       <form name="registration" method="POST" data-netlify="true" class="container bg-transparent rounded p-3">
         <div class="form-row">
           <div class="form-group col-xs-12 col-md-4">
-            <label for="inputName">Name</label>
-            <input type="text" name="Name" class="form-control" id="inputName" placeholder="e.g. John Smith">
+            <!-- <label for="inputName">Name</label> -->
+            <input type="text" name="Name" class="form-control" id="inputName" placeholder="Enter your name">
           </div>
           <div class="form-group col-xs-12 col-md-4">
-            <label for="inputAddress">Email</label>
-            <input type="email" name="Email" class="form-control" id="inputAddress"
-              placeholder="someone@learn.cssd.ab.ca">
+            <!-- <label for="inputAddress">Email</label> -->
+            <input type="email" name="Email" class="form-control" id="inputAddress" placeholder="Enter your email">
           </div>
           <div class="form-group col-xs-12 col-md-4">
-            <label for="inputState">Grade</label>
+            <!-- <label for="inputState">Grade</label> -->
             <select name="Grade" id="inputState" class="form-control">
-              <option selected>Choose...</option>
+              <option selected>Select your grade</option>
               <option value="10">10</option>
               <option value="11">11</option>
               <option value="12">12</option>
@@ -507,12 +534,14 @@
         </div>
         <div class="form-row">
           <div class="form-group col-12">
-            <label for="exampleFormControlTextarea1">If I could code...</label>
+            <label for="exampleFormControlTextarea1">
+              <p>If I could code...</p>
+            </label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
               placeholder="Complete the statement!" name="Message"></textarea>
           </div>
         </div>
-        <button type="submit" class="btn btn-success col-12">Register</button>
+        <button type="submit" class="btn btn-success text-center">Register</button>
       </form>
     </div>
   </section>
@@ -524,16 +553,16 @@
           href="mailto:stmaryscodingclub@gmail.com">stmaryscodingclub@gmail.com</a> and we'll be happy to talk!</p>
       <form name="contact" method="POST" data-netlify="true">
         <div class="form-group">
-          <label for="inputName3">Name</label>
-          <input type="text" class="form-control" id="inputName3" placeholder="Name" name="Name">
+          <!-- <label for="inputName3">Name</label> -->
+          <input type="text" class="form-control" id="inputName3" placeholder="Enter your name" name="Name">
         </div>
         <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
+          <!-- <label for="exampleInputEmail1">Email address</label> -->
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-            placeholder="Enter email" name="Email">
+            placeholder="Enter your email" name="Email">
         </div>
         <div class="form-group">
-          <label for="exampleFormControlTextarea1">Message</label>
+          <!-- <label for="exampleFormControlTextarea1">Message</label> -->
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message"
             name="Message"></textarea>
         </div>
@@ -549,7 +578,7 @@
   <footer class="footer" style="overflow:hidden;">
     <!-- need overflow:hidden because of image size -->
     <div class="row justify-content-center"> <a href="https://www.cssd.ab.ca/schools/stmarys/Pages/default.aspx"><img
-          src="images/stmarys-logo.png" class="col-md-auto" /></a>
+          src="images/longstmaryslogo-clipped.png" class="col-md-auto" /></a>
       <p class="text-center text-muted col-12 col" style="font-size:16px">&copy; Quang Nguyen 2019</p>
     </div>
   </footer>

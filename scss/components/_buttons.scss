@@ -2,4 +2,30 @@
 
 // .btn {
 //     font-family: $body-font;
+//     border-radius: 0px;
+// }
+
+
+
+// attempting to make own custom button set with hover background animation
+
+// .btn {
+//     background: transparent;
+// }
+
+// .btn-main {   
+//     color: $accent-color;
+//     border: 1px solid $accent-color
+//     &:hover {
+//         background: $accent-color;
+//         color: white;
+//     }
+// }
+
+// .btn-secondary {    
+//     color: $accent-color;
+//     &:hover {
+//         background: $accent-color;
+//         color: white;
+//     }
 // }
