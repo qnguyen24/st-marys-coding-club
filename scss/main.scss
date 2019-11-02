@@ -45,8 +45,8 @@ hr {
 }
 .fa {
     font-size: 18px;
-    color: rgb(3, 89, 50);
-    margin: 30px;
+    
+    // margin: 30px;
 }
 .jumbotron {    
     @include bg-image("jumbotron-keyboard-hand-dark.jpg",fixed);
@@ -85,6 +85,8 @@ section {
 #smcc-advantage {
     .fa {
         font-size: 2.5rem;
+        margin: 15px;
+        color: rgb(3, 89, 50);
     }
 }
 .lead {

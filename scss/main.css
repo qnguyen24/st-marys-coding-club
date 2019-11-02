@@ -74,8 +74,6 @@ hr {
 
 .fa {
   font-size: 18px;
-  color: #035932;
-  margin: 30px;
 }
 
 .jumbotron {
@@ -116,6 +114,8 @@ section h1 {
 
 #smcc-advantage .fa {
   font-size: 2.5rem;
+  margin: 15px;
+  color: #035932;
 }
 
 .lead {
