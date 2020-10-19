@@ -1,23 +1,104 @@
-
+// navbar from: https://stackoverflow.com/questions/19733447/bootstrap-navbar-with-left-center-or-right-aligned-items
 .navbar {
+    // border-radius: 0 0 10px 10px;
+    font-weight: 400;
     .nav-item {
+        font-family: $heading-font;
+        font-weight: 600;
+        margin: 5px;
         .nav-link {
-            color: white !important;
+            // color: white !important;
+            margin-right: 10px;            
+            padding: 10px 15px;
+            margin: 0;
+            width: 100%;
+            /* Bounce To Top animation from hover.css*/
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            position: relative;
+            -webkit-transition-property: color;
+            transition-property: color;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            &:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                // background: purple;
+                -webkit-transform: scaleY(0);
+                transform: scaleY(0);
+                -webkit-transform-origin: 50% 100%;
+                transform-origin: 50% 100%;
+                -webkit-transition-property: transform;
+                transition-property: transform;
+                -webkit-transition-duration: 0.5s;
+                transition-duration: 0.5s;
+                -webkit-transition-timing-function: ease-out;
+                transition-timing-function: ease-out;     
+                border-radius: 10px 10px 0 0;
+            }
+
+            &:hover {
+                color: white !important;
+                &:before {
+                    -webkit-transform: scaleY(1);
+                    transform: scaleY(1);
+                    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+                    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+                }
+            }
         }
-        .active {
-            background: $accent-color;
-            color: white;
+
+        &:nth-of-type(1) .nav-link{
+            color: $learn-color;
+            &:before {
+                background-color: $learn-color;
+            }
+        }
+        &:nth-of-type(2) .nav-link {
+            color: rgb(224, 224, 0);
+            color: $create-color;
+            &:before {
+                background-color: $create-color;
+            }
+        }
+        &:nth-of-type(4) .nav-link {
+            color: $belong-color;
+            &:before {
+                background-color: $belong-color;
+            }
+        }
+        &:nth-of-type(5) .nav-link {
+            color: $news-color;
+            &:before {
+                background-color: $news-color;
+            };
         }
     }
 }
+
+// position the hamburger so that it sits at the top right of mobile screen  https://jonsuh.com/hamburgers/
+.hamburger {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    // left: 65vw;
+}
+
+
+
 /*nav color change on scroll*/
 #navbar-wrapper.scrolled {
-    .nav-link {
-        color: black !important;
-    }
-    .nav-link:hover {
-        border-bottom: 1px solid green;
-    }
+    // .nav-link {
+        // color: black !important;
+    // }
     background-color: rgba(255,255,255,0.95) !important;
     transition: background-color 200ms ease-in-out;
     -webkit-box-shadow: 0 8px 6px -6px #999;

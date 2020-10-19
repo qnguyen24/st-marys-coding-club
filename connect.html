@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<head lang="en">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Quang Nguyen">
+    <meta name="description"
+        content="Providing St. Mary's students the opportunity to graduate with a skill set that fosters innovation and critical thinking.">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript,programming,science,computers,digital,coding,processing,stmarys,high school,
+    calgary,club,student,opportunity,competition,high,school,learn,free">
+    <!-- 3rd Party CSS -->
+    <link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="scss/hover.css">
+    <link rel="stylesheet" href="css3-animate-it-master/css3-animate-it-master/css/animations.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!--Custom-->
+    <link rel="icon" href="images/stmarys-logo-transparent.png" />
+    <link href="scss/main.css" rel="stylesheet" type="text/css" />
+    <title>Learn</title>
+</head>
+
+<body class="bg-news subpage">
+
+    <nav class="navbar navbar-light navbar-expand-md bg-white justify-content-md-center justify-content-start fixed-top"
+        id="navbar-wrapper">
+        <a class="navbar-brand d-md-none d-inline" href="index.html"><img src="images/current-logo.png" height="40px"
+                class="rounded" /></a>
+        <div class="animatedParent">
+            <button class="hamburger hamburger--emphatic navbar-toggler animated fadeInRight" type="button"
+                data-toggle="collapse" data-target="#collapsingNavbar2">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+        <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
+            <li class="nav-item my-auto">
+                <a class="navbar-brand mx-0 d-none d-md-inline" href="index.html"><img src="images/smcc-logo-3.png"
+                        height="40px" class="smcc-logo" /></a>
+            </li>
+        </ul>
+        <div class="navbar-collapse collapse justify-content-between align-items-center" id="collapsingNavbar2">
+            <ul class="navbar-nav mx-auto text-md-center text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="/code.html">Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/compile.html">Compile</a>
+                </li>
+                <li class="nav-item my-auto hvr-grow">
+                    <a class="nav-link navbar-brand mx-0 d-none d-md-inline" href="index.html"><img
+                            src="images/current-logo.png" height="40px" /></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/collaborate.html">Collaborate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/connect.html">Connect</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap">
+                <li class="nav-item"><button type="button" class="btn btn-dark" data-toggle="modal"
+                        data-target="#exampleModal">
+                        Sign up
+                    </button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Registration form modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header border border-white">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 class="modal-title font-weight-bold text-center" id="exampleModalLabel">Become a member.</h2>
+                    <form name="registration" method="POST" data-netlify="true"
+                        class="container bg-transparent rounded p-3">
+                        <div class="form-row py-1">
+                            <input type="text" name="Name" class="form-control" id="inputName"
+                                placeholder="Enter your name">
+                        </div>
+                        <div class="form-row py-1">
+                            <input type="email" name="Email" class="form-control" id="inputAddress"
+                                placeholder="Enter your email">
+                        </div>
+                        <div class="form-row py-1">
+                            <div class="form-group col">
+                                <!-- <label for="inputState">Grade</label> -->
+                                <select name="Grade" id="inputState" class="form-control">
+                                    <option selected>Select your grade</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row py-1">
+                            <div class="form-group col-12">
+                                <label for="exampleFormControlTextarea1">
+                                    <p>If I could code...</p>
+                                </label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="Complete the statement!" name="Message"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-light w-100"><span class="fa fa-user-plus"></span></button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- main body content start -->
+
+    <header class="jumbotron jumbotron-fluid bg-black blanket">
+    </header>
+
+    <section class="container jumbo-card-white">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+
+                <h4><span class="fa fa-thumb-tack"></span></br>Contact us </h4>
+                <h2>Always here to help.</h2>
+            </div>
+            <div class="col-md-10 my-3 text-center align-items-center">
+
+                <p>
+                    <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#collapseExample"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Write to us
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <p class="text-primary"><span class="fa fa-envelope mr-3"></span><a
+                            href="mailto:stmaryscodingclub@gmail.com">stmaryscodingclub@gmail.com</a>
+                    </p>
+                    <div class="row justify-content-center">
+                        <form name="contact" method="POST" data-netlify="true"
+                            class="container bg-transparent rounded p-3 col-md-5">
+                            <div class="form-row py-1">
+                                <input type="text" name="Name" class="form-control" id="inputName"
+                                    placeholder="Enter your name">
+                            </div>
+                            <div class="form-row py-1">
+                                <input type="email" name="Email" class="form-control" id="inputAddress"
+                                    placeholder="Enter your email">
+                            </div>
+                            <div class="form-row py-1">
+                                <div class="form-group col-12">
+                                    <textarea class="form-control" id="message" rows="5"
+                                        placeholder="Your message here..." name="Message"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-light text-center w-100"><span
+                                    class="fa fa-send"></span></button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container jumbo-card-white">
+        <div class="row justify-content-center news-item">
+            <div class="col-12 text-center">
+                <h4>Oct. 18, 2020</h4>
+                <h2>Our COVID-19 Plan</h2>
+            </div>
+            <div class="col-md-8 my-3 text-left align-items-center">
+                <p>Hey Saints! Welcome to our new website! We're excited to welcome you back to another school year of
+                    new experiences and coding thrills. Fun fact: as of today, the St. Mary’s Coding Club has now been
+                    active for over two years (since January 2018), teaching students the highly valuable skill of
+                    computer programming.</p>
+
+                <p>Pending construction progress, our in-person kick-off meeting will take place on Tuesday, October 20
+                    at noon in the basement computer lab (S016). We are committed to a safe learning environment for all
+                    of our members and as such, we will be implementing the following protocols in light of the ongoing
+                    COVID-19 pandemic:</p>
+                <p class="indent">• Disinfecting keyboards</p>
+                <p class="indent">• Wearing masks or face coverings</p>
+                <p class="indent">• Installing dividers (shields) between computers</p>
+
+                <!-- <ul>
+                        <li>Disinfecting keyboards</li>
+                        <li>Wearing masks or face coverings</li>
+                        <li>Installing dividers (shields) between computers</li>
+                    </ul> -->
+
+                </p>
+                <p>We hope to see all our new and returning members there! And don't forget to sign up here on our
+                    website!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer container bg-white" style="overflow:hidden;">
+        <!-- need overflow:hidden because of image size -->
+        <div class="row justify-content-center"> <a
+                href="https://www.cssd.ab.ca/schools/stmarys/Pages/default.aspx"><img
+                    src="images/longstmaryslogo-clipped.png" class="col-md-auto" /></a>
+            <p class="text-center col-12" style="font-size:0.8rem">&copy; Quang Nguyen 2021</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--animate on scroll-->
+    <script src="css3-animate-it-master/css3-animate-it-master/js/css3-animate-it.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

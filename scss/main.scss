@@ -1,120 +1,504 @@
-//main SASS file for concepttester
-
 @import "helper/variables";
 @import "helper/mixins";
 @import "components/buttons";
 @import "components/forms";
 @import "components/navbar";
 
+// * {
+//     border: 1px solid red;
+// }
 
-h2, h3, h4, h5, h6 {
-    font-family: $sub-heading-font;
-    font-weight: 300;
-}
-
-h1 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $heading-font;
-    // letter-spacing: 2px;
-    text-transform: uppercase;
-    font-size: 2.8rem;
-    font-weight: 500;
-    margin-bottom: 30px;
 }
-h2 {
-    font-size: 2rem;
-    @include py(15px,15px);
+
+.rounded {
+    border-radius: 10px !important;
 }
-h3 {
-    @include py(10px, 10px);
+
+section {
+    @include py(60px, 60px);
+    @include my(0px, 30px);
+    overflow: hidden;
+
+    h2 {
+        font-family: $heading-font;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-weight: 300;
+    }
+
+    h4 {
+        font-family: $heading-font;
+        font-weight: 700;
+    }
+
+    h5 {
+        font-family: $heading-font;
+        font-weight: 700;
+    }
+
+    &:nth-of-type(2) h4 {
+        color: $learn-color;
+    }
+
+    &:nth-of-type(3) h4 {
+        color: $create-color;
+    }
+
+    &:nth-of-type(4) h4 {
+        color: $belong-color;
+    }
 }
-p, li, .btn {
+
+
+
+p
+ {
     font-family: $body-font;
-    font-weight: 400;
+    font-weight: 300 !important;
     font-size: 1rem;
+    line-height: 1.8rem;
+    color: $body-text-color;
 }
+
 ul {
     list-style: none;
 }
 
 .badge-success {
-    background: $accent-color;
+    background: $learn-color;
 }
-hr {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+
 .fa {
     font-size: 18px;
-    
-    // margin: 30px;
 }
-.jumbotron {    
-    @include bg-image("jumbotron-keyboard-hand-dark.jpg",fixed);
-    @include py(120px,0px);
+
+.jumbotron {
+    // @include bg-image("jumbotron-keyboard-hand-dark.jpg",fixed);
+    background: white;
+    @include py(10rem, 0px);
+
     .fa {
         font-size: 20px;
     }
-//     h1 {
-//         font-size: 3rem;
-//     }
-}
 
-section {
-    @include py(60px,60px);
     h1 {
-        font-family: 'Open Sans';
-        text-transform: none;
-        font-weight: 400;
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 2.8rem;
+        font-family: $heading-font;
+        margin-bottom: 30px;
+        color: #0e1013;
+    }
+
+    p {
+        color: #454F5B;
+        font-size: 1.2rem;
+        font-weight: 500;
     }
 }
 
-#cta {
-    // @include bg-image("jumbotron-keyboard.jpg");
-}
-
-#team {
-    img {
-        width: 150px;
+#mission {
+    p {
+        max-width: 50ch;
     }
 }
+
 #bounce-arrow:hover {
     color: white !important;
-    background-color: #343a40 !important;
+    background-color: $learn-color !important;
     transition: ease-in-out 0.3s;
 }
-#smcc-advantage {
-    .fa {
-        font-size: 2.5rem;
-        margin: 15px;
-        color: rgb(3, 89, 50);
+
+.blanket {
+    margin-bottom: -10vh;
+    height: 50vh;
+}
+
+.bg-black {
+    // background: rgb(24, 21, 29) !important;
+    @include bg-image("stmarysfront.jpg");
+    // background: white;
+}
+
+.jumbo-card-white {
+    background: white;
+    border-radius: $card-border-radius;
+    padding: 3rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.uni-logo {
+    height: auto;
+    width: 7rem;
+    // border-radius: 10px;
+    // border: 1px solid $learn-color;
+    // padding: 10px;
+}
+
+.smcc-logo {
+    border-radius: 5px;
+}
+
+
+
+
+
+.profile-wrapper {
+    // .profile-overlay {
+    //     background: rgb(236, 132, 12);
+    // }
+    &:nth-of-type(even) .profile-overlay {
+        background-color: $learn-color;
     }
+    &:nth-of-type(odd) .profile-overlay {
+        background-color: $sm-yellow;
+    }
+    // &:nth-of-type(1) .profile-overlay {
+    //     background-color: $learn-color;
+    // }
+    // &:nth-of-type(2) .profile-overlay {
+    //     background-color: $create-color;
+    // }
+    // &:nth-of-type(3) .profile-overlay {
+    //     background-color: $belong-color;
+    // }
+    // &:nth-of-type(4) .profile-overlay {
+    //     background-color: $news-color;
+    // }
+    // &:nth-of-type(5) .profile-overlay {
+    //     background-color: $learn-color;
+    // }
+    // &:nth-of-type(6) .profile-overlay {
+    //     background-color: $create-color;
+    // }
 }
-.lead {
-    font-size: 1.125rem;
+
+.profile-card {
+    border-radius: 0 0 20px 20px;
+    background: transparent;
+    padding: 1rem;
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease-in-out; 
+    background: #ffffff;
+        box-shadow: 20px 20px 40px #dbdbdb,
+        0 -0 0 #ffffff;   
+    .portrait {
+        border: 5px solid white;
+        border-radius: 50%;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+        width: 70%;
+        height: auto;
+        margin-bottom: 3rem !important;
+    }
+    &:hover {
+        
+        .profile-overlay {
+            top: 0;
+        border-radius: 0 0 20px 20px;
+        }
+    }
+
+    .profile-overlay {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        right: 0;
+        // background-color: $belong-color;
+        overflow: hidden;
+        width: 100%;
+        height: 101%;
+        transition: .2s;
+        // transition-delay: 0.4s;
+        // transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        // transition-timing-function: cubic-bezier(.48,1.51,.45,.63);
+        transition-timing-function: ease-in-out;
+        // border-radius: 0 0 20px 20px;
+        border-radius: 0;
+        opacity: 0.95;
+        color: white;
+        font-family: $body-font;
+        font-weight: 600;
+        font-size: 1rem;
+        .year {
+            font-weight: 300;
+            background: white;
+            color: black;
+            position: absolute;
+            bottom: 1.5rem;
+            width: 100%;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        img {
+            width: 50%;
+            height: auto;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    }    
 }
-// RESPONSIVE FONT-SIZES
-// @media (min-width: 360px) {
-//     body {
-//         font-size: 14px;
-//     }
 
-// }
-
-// // Medium devices (tablets, 768px and up)
-// @media (min-width: 768px) {
-
-// }
+footer {
+    border-radius: $card-border-radius $card-border-radius 0 0;
+    background: white;
+    padding-top: 1rem;
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
     body {
         font-size: 18px;
     }
+
+    .jumbotron {
+        @include py(6rem, 0px);
+
+        .fa {
+            font-size: 20px;
+        }
+
+        h1 {
+            font-size: 5rem;
+            font-weight: 700;
+            line-height: 5rem;
+            font-family: $heading-font;
+            margin-bottom: 30px;
+            color: #0e1013;
+        }
+
+        p {
+            color: #454F5B;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+    }
 }
 
-// Extra large devices (large desktops, 1200px and up)
-// @media (min-width: 1200px) {
 
-// }
+// page specific backgrounds
+.bg-learn {
+    background: $learn-color;
+}
+
+.bg-create {
+    background: $create-color;
+}
+
+.bg-belong {
+    background: $belong-color;
+}
+
+.bg-news {
+    background: $news-color;
+}
+
+.subpage {
+    section {
+        &:nth-of-type(odd) h4 {
+            color: $learn-color;
+        }
+
+        &:nth-of-type(even) h4 {
+            color: $sm-yellow;
+        }
+    }
+}
 
 
+// orbiting logos animation
+#container {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    // border: 1px solid #000;
+    position: relative;
+    border-radius: 50%;
+    animation: spin 10s linear infinite;
+}
+
+.item {
+    // width: 30px;
+    // height: 30px;
+    // line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    // background: #f00;
+    animation: spin 10s linear infinite reverse;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+
+
+// events page accordion
+.accordion {
+    // background-color: #eee;
+    // color: #444;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: $btn-light-bg !important;
+    color: white !important;
+    &:after {
+        color: white !important;
+    }
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+    color: white;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;    
+    p {
+        font-size: 0.9rem;
+        padding: 20px;
+    }
+  }
+
+.fa-thumb-tack {
+    transform: rotate(45deg);
+}
+
+.quiet {
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    font-weight: 300 !important;
+    font-family: $heading-font;
+    font-size: 1rem !important;
+    // margin-bottom: 30px;
+    font-style: italic;
+}
+ 
+// glitch effect    https://codepen.io/cipherbeta/pen/YLdVjw
+
+// Here's the meat and potatoes.
+
+/* Our mixin positions a copy of our text
+directly on our existing text, while
+also setting content to the appropriate
+text set in the data-text attribute. */
+@mixin glitchCopy { 
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitch {
+position: relative;
+color: white;
+font-size: 4em;
+letter-spacing: .5em;
+/* Animation provies a slight random skew. Check bottom of doc
+for more information on how to random skew. */
+animation: glitch-skew 1s infinite linear alternate-reverse;
+
+// Creates a copy before our text. 
+&::before{
+    // Duplicates our text with the mixin.
+    @include glitchCopy;
+    // Scoots text slightly to the left for the color offset.
+    left: 2px;
+    // Creates the color 'shadow' that happens on the glitch.
+    text-shadow: -2px 0 $glitch-1;
+    /* Creates an initial clip for our glitch. This works in
+    a typical top,right,bottom,left fashion and creates a mask
+    to only show a certain part of the glitch at a time. */
+    clip: rect(44px, 450px, 56px, 0);
+    /* Runs our glitch-anim defined below to run in a 5s loop, infinitely,
+    with an alternating animation to keep things fresh. */
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+
+// Creates a copy after our text. Note comments from ::before.
+&::after {
+    @include glitchCopy;
+    left: -2px;
+    text-shadow: -2px 0 $glitch-2, 2px 2px $glitch-1;
+    animation: glitch-anim2 1s infinite linear alternate-reverse;
+}
+}
+
+/* Creates an animation with 20 steaps. For each step, it calculates 
+a percentage for the specific step. It then generates a random clip
+box to be used for the random glitch effect. Also adds a very subtle
+skew to change the 'thickness' of the glitch.*/
+@keyframes glitch-anim {
+$steps: 20;
+@for $i from 0 through $steps {
+#{percentage($i*(1/$steps))} {
+  clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+        transform: skew((random(100) / 100) + deg);
+}
+}
+}
+
+// Same deal, just duplicated for ultra randomness.
+@keyframes glitch-anim2 {
+$steps: 20;
+@for $i from 0 through $steps {
+#{percentage($i*(1/$steps))} {
+  clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+        transform: skew((random(100) / 100) + deg);
+}
+}
+}
+
+// Does the same deal as before, but now only skews. Used for main text.
+@keyframes glitch-skew {
+$steps: 10;
+@for $i from 0 through $steps {
+#{percentage($i*(1/$steps))} {
+  transform: skew((random(10) - 5) + deg);
+}
+}
+}

@@ -1,11 +1,34 @@
 // @import "helper/variables";
 
-// .btn {
-//     font-family: $body-font;
-//     border-radius: 0px;
-// }
+.btn {
+    font-family: $heading-font;
+    font-weight: 600 !important;
+}
 
+.btn-light {
+    border: 1px solid rgb(180, 180, 180) !important;
+    transition-duration: 0.2s !important;
+    &:hover {
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+        background: $btn-light-bg !important;
+        color: white;
+    }
+    &:active {
+        border: none;
+    }
+}
 
+// removes annoying grey border around button for nav bar toggler
+.navbar-toggler {
+    padding: 10px;
+    border:none !important;
+    background-color:transparent !important;
+    outline:none !important;
+    box-shadow: none !important;
+    &:focus {
+        outline:0;
+    }
+}
 
 // attempting to make own custom button set with hover background animation
 

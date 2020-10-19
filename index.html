@@ -7,16 +7,19 @@
   <meta name="author" content="Quang Nguyen">
   <meta name="description"
     content="Providing St. Mary's students the opportunity to graduate with a skill set that fosters innovation and critical thinking.">
-  <meta name="keywords"
-    content="HTML,CSS,XML,JavaScript,programming,science,computers,digital,coding,processing,stmarys,high school,calgary,club,student,opportunity,competition,high,school,learn,free">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript,programming,science,computers,digital,coding,processing,stmarys,high school,
+  calgary,club,student,opportunity,competition,high,school,learn,free">
   <!-- 3rd Party CSS -->
+  <link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
     integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="scss/hover.css">
   <link rel="stylesheet" href="css3-animate-it-master/css3-animate-it-master/css/animations.css">
-  <link rel="stylesheet" type="text/css"
-    href="https://fonts.googleapis.com/css?family=Source Sans Pro:300,400,500|Titillium+Web|Scope+One|Libre+Franklin|IBM+Plex+Sans:100,100i,400,400i,500,600|Montserrat:300,400,500|Oswald:300,400,500|Raleway:300,400|Roboto:300,400,500|Poppins:200,300,400,500|IBM+Plex+Mono|IBM+Plex+Sans:300|Open+Sans:300,400,500,600">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <!--Custom-->
   <link rel="icon" href="images/stmarys-logo-transparent.png" />
   <link href="scss/main.css" rel="stylesheet" type="text/css" />
@@ -24,584 +27,250 @@
 </head>
 
 <body>
-
-
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-transparent" id="navbar-wrapper">
-    <a class="navbar-brand" href="index.html"><img src="images/smcc-logo-3.png" class="rounded" height="40"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-
-        <li class="nav-item">
-          <a class="nav-link" href="#what-we-do">What We Do</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#online-learning">Online Learning</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#events">Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#team">Our Team</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#mission">Mission</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+  <div class="nav-animation animatedParent animateOnce">
+    <nav
+      class="navbar navbar-light navbar-expand-md bg-white justify-content-md-center justify-content-start fixed-top animated fadeInDownShort delay-500"
+      id="navbar-wrapper">
+      <a class="navbar-brand d-md-none d-inline" href="index.html"><img src="images/current-logo.png" height="40px"
+          class="rounded" /></a>
+      <div class="animatedParent">
+        <button class="hamburger hamburger--emphatic navbar-toggler animated fadeInRight" type="button"
+          data-toggle="collapse" data-target="#collapsingNavbar2">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+      <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
+        <li class="nav-item my-auto">
+          <a class="navbar-brand mx-0 d-none d-md-inline" href="index.html"><img src="images/smcc-logo-3.png"
+              height="40px" class="smcc-logo" /></a>
         </li>
       </ul>
-    </div>
-  </nav>
-
-  <!-- <nav class="navbar navbar-light bg-transparent navbar-expand-md fixed-top" id="navbar-wrapper">
-    <a class="navbar-brand" href="index.html"><img src="images/smcc-transparent.png" height="60"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">        
-      <ul class="nav">
+      <div class="navbar-collapse collapse justify-content-between align-items-center" id="collapsingNavbar2">
+        <ul class="navbar-nav mx-auto text-md-center text-center">
           <li class="nav-item">
-              <a class="nav-link" href="#mission">Mission</a>
-            </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.openprocessing.org/user/169324/">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav> -->
+            <a class="nav-link" href="/code.html">Code</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/compile.html">Compile</a>
+          </li>
+          <li class="nav-item my-auto hvr-grow">
+            <a class="nav-link navbar-brand mx-0 d-none d-md-inline" href="index.html"><img
+                src="images/current-logo.png" height="40px" /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/collaborate.html">Collaborate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/connect.html">Connect</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap">
+          <li class="nav-item"><button type="button" class="btn btn-dark" data-toggle="modal"
+              data-target="#exampleModal">
+              Sign up
+            </button></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
 
+  <!-- Registration form modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header border border-white">
 
-  <header class="jumbotron jumbotron-fluid text-left animatedParent animateOnce" id="home">
-    <div class="container">
-      <div class="row align-items-center justify-content-md-center">
-
-        <div class="col-md-8 welcome-blurb my-3">
-          <p class="text-white animated fadeInDownShort delay-250">LEARN. CREATE. BELONG.</p>
-          <h1 class="text-white animated fadeInUpShort delay-250">The St. Mary's Coding Club</h1>
-          <!-- <hr class="animated fadeInUpShort delay-500"> -->
-          <!-- <code class="text-white animated fadeInUpShort delay-500">Join us Tuesdays and Thursdays at lunch in the ComTech room!</code> -->
-
-          <!-- <div class="animated fadeInUpShort delay-250 col-md-8 announcements bg-white p-3 rounded mt-5">
-            <h3 class="mb-3"><u>Announcements</u></h3>
-            <p>16/09/19: Please stay tuned for club meeting days.</p>
-            <p>12/09/19: Check us out at the club fair on Friday, September 20, 2019!</p>
-          </div> -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-
-        <div class="col-md-4 my-3">
-
-          <form name="registration" method="POST" data-netlify="true"
-            class="bg-white container bg-light rounded p-3 text-center">
-            <h2>Join the club</h2>
-            <div class="form-row">
-              <div class="form-group col-12">
-                <!-- <label for="inputName">Name</label> -->
-                <input type="text" name="Name" class="form-control" id="inputName" placeholder="Enter your name">
-              </div>
+        <div class="modal-body">
+          <h2 class="modal-title font-weight-bold text-center" id="exampleModalLabel">Become a member.</h2>
+          <form name="registration" method="POST" data-netlify="true" class="container bg-transparent rounded p-3">
+            <div class="form-row py-1">
+              <input type="text" name="Name" class="form-control" id="inputName" placeholder="Enter your name">
             </div>
-
-            <div class="form-row">
-              <div class="form-group col-12">
-                <!-- <label for="inputAddress">Email</label> -->
-                <input type="email" name="Email" class="form-control" id="inputAddress" placeholder="Enter your email">
-              </div>
+            <div class="form-row py-1">
+              <input type="email" name="Email" class="form-control" id="inputAddress" placeholder="Enter your email">
             </div>
-            <div class="form-row">
-              <div class="form-group col-12">
+            <div class="form-row py-1">
+              <div class="form-group col">
                 <!-- <label for="inputState">Grade</label> -->
                 <select name="Grade" id="inputState" class="form-control">
-                  <option selected>Select your grade...</option>
+                  <option selected>Select your grade</option>
                   <option value="10">10</option>
                   <option value="11">11</option>
                   <option value="12">12</option>
                 </select>
               </div>
             </div>
-            <div class="form-row text-center">
+            <div class="form-row py-1">
               <div class="form-group col-12">
-                <label for="exampleFormControlTextarea1" class="text-center">
+                <label for="exampleFormControlTextarea1">
                   <p>If I could code...</p>
                 </label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                   placeholder="Complete the statement!" name="Message"></textarea>
               </div>
             </div>
-            <button type="submit" class="btn btn-success">Register</button>
-          </form>
+            <button type="submit" class="btn btn-light w-100"><span class="fa fa-user-plus"></span></button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- main body content start -->
+
+  <header class="jumbotron animatedParent animateOnce bg-transparent text-center" id="home">
+    <div class="container">
+      <!-- <img src="images/smcc-logo-new.jpeg"/ style="border-radius:20px;position:relative;bottom:60px;width:30vw;" class="m-3"> -->
+      <div class="row justify-content-center">
+        <div id="app">
+          <div id="wrapper">
+            <!-- Make sure data-text equals the text you put inside the tags. -->
+            <h1 class="glitch quiet" data-text="
+            St. Mary's Coding Club">St. Mary's Coding Club</h1>
+          </div>
         </div>
       </div>
-
       <div class="row justify-content-center">
-        <a href="#code-video"><span
-            class="fa fa-chevron-down bg-white text-dark my-5 rounded-circle p-3 animated fadeInDownShort delay-250"
-            id="bounce-arrow"></span></a>
+        <h1 class="animated fadeInDownShort">Start your coding journey today.</h1>
       </div>
+    </div>
+    <div class="row justify-content-center">
+      <p class="animated fadeInDownShort delay-500">Code the future. Compile your ideas.</br> Collaborate with friends.
+        Connect with us.</p>
+    </div>
+    <div class="row justify-content-center">
+      <button type="button" class="btn btn-dark mt-3 animated fadeInDownShort delay-500" data-toggle="modal"
+        data-target="#exampleModal">
+        Sign up
+      </button>
+    </div>
+    <div class="row justify-content-center">
+      <a href="#code-video"><span
+          class="fa fa-chevron-down bg-white text-success my-5 rounded-circle p-3 animated fadeInDownShort delay-500"
+          id="bounce-arrow"></span></a>
     </div>
   </header>
 
-  <section class="container-fluid text-center" id="code-video">
+
+  <section class="container" id="code-video">
     <div class="container">
-      <h1>What's in it for you?</h1>
       <div class="row justify-content-center">
-        <div class="embed-responsive embed-responsive-16by9 col-md-10">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/nKIu9yen5nc" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="embed-responsive embed-responsive-16by9 col-md-10 rounded">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/nKIu9yen5nc?autoplay=1&mute=1"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen"></iframe>
         </div>
       </div>
-
     </div>
   </section>
 
-  <section class="container-fluid" id="what-we-do">
-    <div class="container">
-
-      <div class="row justify-content-center">
-        <h1 class="text-center col-12">Learn how to code</h1>
-        <p class="text-center col-md-8 lead">Learn on <strong>Tuesdays</strong> and <strong>Thursdays</strong> at lunch
-          in the ComTech room. <u>Both meetings in a week are the same</u>, in case you can only make it to one.
+  <section class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h4>Code</h4>
+        <h2>We'll teach you everything from scratch.</h2>
+        <p>Learn on Tuesdays and Thursdays at lunch in the ComTech room. Both meetings in a week are the same so you
+          only
+          need to make it to one.
         </p>
+        <a href="code.html" class="btn btn-light border mb-3">Start coding</a>
       </div>
-
-
-      <div class="row justify-content-center mt-5">
-        <div class="col-md-6">
-          <h2 class="text-left">What We Cover</h2>
-          <p>These are the basic tools for creating your own cool projects. Learn these topics at our lunch meetings
-            throughout the year, accompanied by a variety of activities for you to apply what you've learned and fill in
-            any gaps. With this foundation, you can confidently learn new skills and take on new challenges. Since each
-            new topic builds on
-            the one before it, join at the beginning of the school year for the best
-            experience.</p>
-        </div>
-        <div class="col-md-6 animatedParent animateOnce">
-          <div class="col animated fadeInUpShort">
-            <h3>1. Introduction to <a href="https://processing.org/">Processing</a></h3>
-            <p>Become familiar with the development process.</p>
-          </div>
-          <div class="col animated fadeInUpShort delay-250">
-            <h3>2. Variables</h3>
-            <p>Learn how to store data on a computer.</p>
-          </div>
-          <div class="col animated fadeInUpShort delay-500">
-            <h3>3. Decision Structures</h3>
-            <p>Harness the computer's decision making power.</p>
-          </div>
-          <div class="col animated fadeInUpShort delay-750">
-            <h3>4. Repetition Structures</h3>
-            <p>Let the computer do the repetitive work.</p>
-          </div>
-          <div class="col animated fadeInUpShort delay-1000">
-            <h3>5. Functions</h3>
-            <p>Expand the horizons of your code.</p>
-          </div>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="row justify-content-center">
-        <div class="col-md-6 order-md-2 text-justified">
-          <h2>The St. Mary's Coding Club Advantage</h2>
-          <p>Learning with us beats learning to code online by yourself. We streamline
-            the learning process by setting and supporting a clear path towards mastery of the foundations of
-            programming. With Coding Club, you can focus on learning rather than figuring out the best way to learn.</p>
-        </div>
-        <div class="col-md-6 order-md-1 text-center" id="smcc-advantage">
-          <div class="row justify-content-center animatedParent animateOnce">
-            <div class="col-md-6 animated flipInY delay-500">
-              <span class="fa fa-laptop"></span>
-              <h4>Learn from the beginning</h4>
-              <p>No prior knowledge required.</p>
-            </div>
-            <div class="col-md-6 animated flipInY delay-750">
-              <span class="fa fa-code"></span>
-              <h4>Learn with <a href="https://processing.org/">Processing</a></h4>
-              <p>An open source language that is easy and visual.</p>
-            </div>
-            <div class="col-md-6 animated flipInY delay-1000">
-              <span class="fa fa-group"></span>
-              <h4>Dedicated Leaders</h4>
-              <p>Students like you who lead club meetings and organize club activities.</p>
-            </div>
-            <div class="col-md-6 animated flipInY delay-1250">
-              <span class="fa fa-graduation-cap"></span>
-              <h4>Instant Mentor access</h4>
-              <p>Connect with St. Mary's alumni still giving back to the Club.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="row justify-content-center" id="online-learning">
-        <div class="col-md-6">
-          <h2>Our Free Online Resources</h2>
-          <p>Whether you can't come to club meetings or just want a quick refresher, use these carefully prepared
-            resources from our Mentors. Choose from slide decks or simple webpages that walk you smoothly through each
-            topic.</p>
-        </div>
-        <div class="col-md-6">
-          <div class="row justify-content-center text-center animatedParent animateOnce">
-            <div class="col-md-10 border shadow rounded m-3 p-3 animated fadeInDownShort delay-500">
-              <h3>Crash Courses</h3>
-              <p>Our detailed PowerPoints get into the specifics with plenty of examples.</p>
-              <!-- <p class="text-center">1. Introduction to Processing</p> -->
-              <a href="/ppt/1 - Introduction To Processing.pdf" download class="btn btn-success col-12 my-1">1.
-                Introduction to Processing</a>
-              <a href="/ppt/2 - Variables and Data Types.pdf" download class="btn btn-success col-12 my-1">2. Variables
-                and Data Types</a>
-              <a href="decision-structures.html" class="btn btn-success col-12 my-1">3. Decision Structures</a>
-              <a href="/ppt/4 - RepetitionStructures1.pdf" download class="btn btn-success col-12 my-1">4. Repetition Structures (Part 1)</a>
-              <a href="/ppt/4 - RepetitionStructures2.pdf" download class="btn btn-success col-12 my-1">4. Repetition Structures (Part 2)</a>
-              <a href="/ppt/4 - RepetitionStructures3.pdf" download class="btn btn-success col-12 my-1">4. Repetition Structures (Part 3)</a>
-              <a href="/ppt/4 - RepetitionStructures4.pdf" download class="btn btn-success col-12 my-1">4. Repetition Structures (Part 4)</a>
-              <a href="/ppt/Arduino Crash Course.pdf" download class="btn btn-warning col-12 my-1">Arduino Crash Course</a>
-            </div>
-
-            <!-- <div class="col-md-10 border shadow rounded p-3 m-3 animated fadeInDownShort delay-750">
-              <h3>Crash Courses</h3>
-              <span class="badge badge-primary mb-4">Coming soon</span>
-              <p>Our crash courses get straight to the point and are great as a quick reference.</p>
-            </div> -->
-          </div>
-        </div>
-
+      <div class="col-md-6">
+        <img src="images/undraw_programmer.svg" style="border-radius:10px;width:100%;" />
       </div>
     </div>
   </section>
 
-  <section class="container-fluid text-center" id="projects">
-    <div class="container">
-      <h1 class="text-center">Unleash your creativity</h1>
-      <p class="lead">With your newly acquired coding toolbox, show the world what you're made of with your very own
-        project!</p>
-      <div class="row justify-content-around animatedParent animateOnce">
-        <div class="col-md-4 border shadow rounded p-5 my-3 animated flipInX">
-          <h3>Create with Processing</h3>
-          <img src="images/projects-thumbnail.png" class="my-3 col-12" />
-          <p>Use Processing to make an app or a game with other club members.</p>
-          <a href="https://www.openprocessing.org/user/169324/" target="_blank" class="btn btn-warning">Check out our
-            projects</a>
-        </div>
-        <div class="col-md-4 border shadow rounded p-5 my-3 animated flipInX delay-250">
-          <h3>Create with Arduino</h3>
-          <span class="badge badge-primary">New</span>
-          <img src="images/arduino-uno.png" class="my-3 col-12" />
-          <p>Apply your coding knowledge to electronics with Arduino kits generously
-            donated to us by Robogals UCalgary.</p>
-          <a href="https://www.arduino.cc/" class="btn btn-info">Explore Arduino</a>          
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="container-fluid text-center" id="events">
-    <div class="container">
-      <h1 class="text-center">Belong to our community</h1>
-      <p class="lead">The St. Mary's Coding Club organizes events throughout the year to put your coding skills to the
-        test while
-        having a ton of fun!</p>
-      <div class="row justify-content-center animatedParent animateOnce">
-        <div class="card text-dark bg-warning m-3 animated fadeInLeft delay-750" style="max-width: 18rem;">
-          <div class="card-header">Career Event</div>
-          <div class="card-body">
-            <h5 class="card-title">Canadian Reserves: Signals Officers</h5>
-            <p class="card-text">Coding is useful in virtually any field. Join us in learning how Signals Officers use
-              code in the Canadian Armed Forces.</p>
-          </div>
-          <div class="card-footer text-dark">
-            Thursday, March 5, 2020
-          </div>
-        </div>
-        <div class="card text-white bg-success m-3 animated fadeInLeft delay-250" style="max-width: 18rem;">
-          <div class="card-header">Competition</div>
-          <div class="card-body">
-            <h5 class="card-title">Crack The Code</h5>
-            <p class="card-text">Crack the code (get it?) to free your team from a room infested with <i>bugs</i>.</p>
-          </div>
-          <div class="card-footer text-white">
-            Date TBD
-          </div>
-        </div>
-        <div class="card text-white bg-success m-3 animated fadeInLeft delay-500" style="max-width: 18rem;">
-          <div class="card-header">Competition</div>
-          <div class="card-body">
-            <h5 class="card-title">Binary Blitz</h5>
-            <p class="card-text">Go on a scavenger hunt around St. Mary's and collect pieces of Firewall to defend your
-              computer from the Virus.</p>
-          </div>
-          <div class="card-footer text-white">
-            Date TBD
-          </div>
-        </div>        
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <section class="container-fluid text-left" id="team">
-    <div class="container">
-      <h1 class="text-center">Always supported by our team</h1>
-      <p class="lead text-center">You're backed by a strong group of Leaders and Mentors that's always ready to listen
-        and help
-        out.</p>
-
-
-
-      <h2>Leaders</h2>
-      <p>Leaders are fellow St. Mary's students who bring you the Coding Club experience. They lead club meetings,
-        organize events, and are your first point of contact for everything Coding Club.
-      </p>
-      <div class="row animatedParent animateOnce">
-
-        <div class="col-md-6">
-          <div
-            class="row no-gutters justify-content-center align-items-center border shadow rounded my-3 py-3 animated fadeInUpShort">
-            <div class="col-md-4">
-              <div class="row align-items-center justify-content-center">
-                <img src="images/smlogomod1.jpg" class="card-img" alt="...">
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title border-bottom border-success">Dawson van Vlaanderen</h5>
-                <p class="card-text">Dawson is an Extended French student at St. Mary's who is fascinated by the world
-                  of code. He is always finding new ways to apply coding to problems we encounter in our daily lives.
-                </p>
-                <p class="card-text"><small class="text-muted">Joined Sep 2018</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div
-            class="row no-gutters justify-content-center align-items-center border shadow rounded my-3 py-3 animated fadeInUpShort delay-250">
-            <div class="col-md-4">
-              <div class="row align-items-center justify-content-center">
-                <img src="images/smlogomod1.jpg" class="card-img" alt="...">
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title border-bottom border-success">Francisco Benavides</h5>
-                <p class="card-text">Francisco is a Full IB Extended French student at St. Mary's who is passionate
-                  about teaching people how to code. He also has experience coding with Python.</p>
-                <p class="card-text"><small class="text-muted">Joined Sep 2018</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <hr>
-
-
-      <h2>Mentors</h2>
-      <p>Mentors are St. Mary's alumni who continue giving back to the Club. They provide quick support for
-        your coding questions and are open to discussing the career paths they have chosen as well. They also work
-        behind
-        the scenes to bring new opportunities to Coding Club members and enrich the Coding Club experience by
-        coaching the Leaders.
-      </p>
-
-      <div class="row animatedParent animateOnce">
-
-        <div class="col-md-6">
-          <div
-            class="row no-gutters justify-content-center align-items-center border shadow rounded my-3 py-3 animated fadeInUpShort">
-            <div class="col-md-4">
-              <div class="row align-items-center justify-content-center">
-                <img src="images/ucalgary-logo.png" class="card-img" alt="...">
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title border-bottom border-danger">Quang Nguyen</h5>
-                <p class="card-text">Quang is in his 3rd year of Mechanical Engineering with a Biomedical Engineering
-                  Specialization at the University of Calgary.
-                </p>
-                <p class="card-text"><small class="text-muted">Joined Jan 2018 (Co-founder)</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div
-            class="row no-gutters justify-content-center align-items-center border shadow rounded my-3 py-3 animated fadeInUpShort delay-250">
-            <div class="col-md-4">
-              <div class="row align-items-center justify-content-center">
-                <img src="images/ucalgary-logo.png" class="card-img" alt="...">
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title border-bottom border-danger">Andreas Brown</h5>
-                <p class="card-text">Andreas is in his 3rd year of Geomatics Engineering at the University of
-                  Calgary.
-                </p>
-                <p class="card-text"><small class="text-muted">Joined Jan 2018 (Co-founder)</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div
-            class="row no-gutters justify-content-center align-items-center border shadow rounded my-3 py-3 animated fadeInUpShort delay-500">
-            <div class="col-md-4">
-              <div class="row align-items-center justify-content-center">
-                <img src="images/ubc-logo.png" class="card-img" alt="...">
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title border-bottom border-primary">Kyle van Winkoop</h5>
-                <p class="card-text">Kyle is starting his first year of Engineering at the University of British
-                  Columbia. He was the Coding Club's first leader.
-                </p>
-                <p class="card-text"><small class="text-muted">Joined Jan 2018 (Co-founder)</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-6">
-          <div
-            class="row no-gutters justify-content-center align-items-center border shadow rounded my-3 py-3 animated fadeInUpShort delay-750">
-            <div class="col-md-4">
-              <div class="row align-items-center justify-content-center">
-                <img src="images/waterloo-logo.png" class="card-img" alt="...">
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title border-bottom border-warning">Cesar Genatios</h5>
-                <p class="card-text">Cesar is in his 3rd year of Biomedical Engineering at the University of
-                  Waterloo.
-                </p>
-                <p class="card-text"><small class="text-muted">Joined Aug 2019</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-    </div>
-  </section>
-
-
-  <section class="container-fluid text-center text-white" id="mission" style="background-color: #0C6F42">
-    <div class="container">
-      <h1 class="display-5">Why we do what we do</h1>
-      <div class="row justify-content-center">
-        <p style="color:#EDB820;font-family:'Garamond';font-size:60px;margin-bottom:-20px;">"</p>
-        <p class="lead">
-          Our mission is to provide St. Mary's students the opportunity to graduate
-          with a skill set and frame of mind that fosters innovation and critical thinking.
-          The absence of computer science at St. Mary’s leaves students one step behind many other
-          high schools in Calgary. The St. Mary’s Coding Club fills in this gap by inviting students
-          to join a community of creators, collaborators and leaders.
+  <section class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h4>Compile</h4>
+        <h2>Your imagination is the limit.</h2>
+        <p>Make your own game, app, website, and much more. We've got Arduino kits for when you're ready to expand to
+          electronics too.
         </p>
-        <p style="color:#EDB820;font-family:'Garamond';font-size:60px;">"</p>
+        <a href="compile.html" class="btn btn-light border mb-3">See projects</a>
       </div>
-      <p class="lead text-right"><i>- The St. Mary's Coding Club</i></p>
+      <div class="col-md-6">
+        <img src="images/undraw_work_together.svg" style="border-radius:10px;width:100%;" />
+      </div>
     </div>
   </section>
 
-  <section class="container-fluid text-center" id="cta">
-    <div class="container border shadow rounded p-5">
-      <h2 class="text-center col-12">Become a member. Start coding today.</h2>
-      <form name="registration" method="POST" data-netlify="true" class="container bg-transparent rounded p-3">
-        <div class="form-row">
-          <div class="form-group col-xs-12 col-md-4">
-            <!-- <label for="inputName">Name</label> -->
+  <section class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h4>Collaborate</h4>
+        <h2>Come for the code, stay for the fun.</h2>
+        <p>Find like-minded students at our meetings and keep the conversation going on our Discord.
+        </p>
+        <a href="collaborate.html" class="btn btn-light border mb-3">Meet the team</a>
+      </div>
+      <div class="col-md-6">
+        <img src="images/undraw_team_spirit.svg" style="border-radius:10px;width:100%;" />
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container text-center text-white rounded" id="mission" style="background:#0c9f64">
+    <div class="container text-white">
+      <h2 class="mb-5">Why we do what we do</h1>
+        <div class="row justify-content-center text-white">
+          <p style="color:#EDB820;font-family:'Garamond';font-size:60px;margin-bottom:-20px;">"</p>
+          <p class="text-white">
+            Our mission is to provide St. Mary's students the opportunity to graduate
+            with a skill set and frame of mind that fosters innovation and critical thinking.
+            The absence of computer science at St. Mary’s leaves students one step behind many other
+            high schools in Calgary. The St. Mary’s Coding Club fills in this gap by inviting students
+            to join a community of creators, collaborators and leaders.
+          </p>
+          <p style="color:#EDB820;font-family:'Garamond';font-size:60px;">"</p>
+        </div>
+
+    </div>
+  </section>
+
+
+
+  <section class="container" id="contact">
+    <div class="text-center rounded p-5">
+      <h2 class="mb-4 py-3">Got questions? Drop us a line!</h2>
+      <!-- <p class="text-center col-md-6">Drop us a line using the form below!</p> -->
+      <div class="row justify-content-center">
+        <form name="contact" method="POST" data-netlify="true" class="container bg-transparent rounded p-3 col-md-5">
+          <div class="form-row py-1">
             <input type="text" name="Name" class="form-control" id="inputName" placeholder="Enter your name">
           </div>
-          <div class="form-group col-xs-12 col-md-4">
-            <!-- <label for="inputAddress">Email</label> -->
+          <div class="form-row py-1">
             <input type="email" name="Email" class="form-control" id="inputAddress" placeholder="Enter your email">
           </div>
-          <div class="form-group col-xs-12 col-md-4">
-            <!-- <label for="inputState">Grade</label> -->
-            <select name="Grade" id="inputState" class="form-control">
-              <option selected>Select your grade</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-            </select>
+          <div class="form-row py-1">
+            <div class="form-group col-12">
+              <textarea class="form-control" id="message" rows="5" placeholder="Your message here..."
+                name="Message"></textarea>
+            </div>
           </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-12">
-            <label for="exampleFormControlTextarea1">
-              <p>If I could code...</p>
-            </label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-              placeholder="Complete the statement!" name="Message"></textarea>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-success text-center">Register</button>
-      </form>
+          <button type="submit" class="btn btn-light text-center w-100"><span class="fa fa-send"></span></button>
+        </form>
+      </div>
     </div>
   </section>
 
-  <section class="container-fluid text-left" id="contact">
-    <div class="container">
-      <h1 class="display-5 text-center col-12">Looking to chat?</h1>
-      <p class="text-center col-12">Drop us a line using the form below, or email us at <a
-          href="mailto:stmaryscodingclub@gmail.com">stmaryscodingclub@gmail.com</a> and we'll be happy to talk!</p>
-      <form name="contact" method="POST" data-netlify="true">
-        <div class="form-group">
-          <!-- <label for="inputName3">Name</label> -->
-          <input type="text" class="form-control" id="inputName3" placeholder="Enter your name" name="Name">
-        </div>
-        <div class="form-group">
-          <!-- <label for="exampleInputEmail1">Email address</label> -->
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-            placeholder="Enter your email" name="Email">
-        </div>
-        <div class="form-group">
-          <!-- <label for="exampleFormControlTextarea1">Message</label> -->
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message"
-            name="Message"></textarea>
-        </div>
-        <div class="form-group">
-          <button type="submit" class="btn btn-success">Send</button>
-        </div>
-      </form>
-      </p>
-    </div>
-  </section>
-  <hr>
-
-  <footer class="footer" style="overflow:hidden;">
+  <footer class="footer container rounded" style="overflow:hidden;">
     <!-- need overflow:hidden because of image size -->
     <div class="row justify-content-center"> <a href="https://www.cssd.ab.ca/schools/stmarys/Pages/default.aspx"><img
           src="images/longstmaryslogo-clipped.png" class="col-md-auto" /></a>
-      <p class="text-center text-muted col-12 col" style="font-size:16px">&copy; Quang Nguyen 2019</p>
+      <p class="text-center col-12" style="font-size:0.8rem">&copy; Quang Nguyen 2021</p>
     </div>
   </footer>
 
