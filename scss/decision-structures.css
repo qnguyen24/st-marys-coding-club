@@ -1,25 +1,15 @@
 /* CRASH COURSE SPECIFIC CSS */
-h2 {
-    font-weight: 500;
-    font-family: "Titillium web"
-}
 
-h2::after {
-    content: " ";
-    background: black;
-    width: 2px;
-    height: 30px;
-}
 .crash-course-body h2{
     margin-top: 20px;
-    border-bottom: 3px solid black;
-    padding-bottom: 10px;
-}
-.crash-course-body p, .crash-course-body li {
-    font-family: 'Source Sans Pro';
-	font-weight: 400;
-	font-size: 16px;
-	/* line-height: 1.8rem; */
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 10px;
+    background: rgb(27, 27, 27);
+    color: white;
+    padding: 20px;
+    margin: 40px 0;
 }
 .crash-course-body img {
     width: 100%;
@@ -28,20 +18,20 @@ h2::after {
 pre {
     color: #e83e8c;
 }
-.btn {
-    border-radius: 10px;
-    font-family: 'Source Sans Pro';
-    /* text-transform: uppercase; */
-}
 .jumbotron {
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
-    background-image: url(../images/jumbotron-dark.jpg);
+    background-image: url(../images/undraw_coding.svg);
     margin: 0;
     padding-top: 200px;
     padding-bottom: 150px;
+}
+.jumbotron h1 {
+    background: black !important;
+    color: white;
+    opacity: 0.9 !important;
 }
 
 ul {
