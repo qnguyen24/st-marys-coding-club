@@ -42,8 +42,8 @@
         </div>
         <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
             <li class="nav-item my-auto">
-                <a class="navbar-brand mx-0 d-none d-md-inline" href="index.html"><img
-                        src="images/smcc-logo-3.png" height="40px" class="smcc-logo" /></a>
+                <a class="navbar-brand mx-0 d-none d-md-inline" href="index.html"><img src="images/smcc-logo-3.png"
+                        height="40px" class="smcc-logo" /></a>
             </li>
         </ul>
         <div class="navbar-collapse collapse justify-content-between align-items-center" id="collapsingNavbar2">
@@ -56,7 +56,7 @@
                 </li>
                 <li class="nav-item my-auto hvr-grow">
                     <a class="nav-link navbar-brand mx-0 d-none d-md-inline" href="index.html"><img
-                            src="images/current-logo.png" height="40px"/></a>
+                            src="images/current-logo.png" height="40px" /></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/collaborate.html">Collaborate</a>
@@ -87,6 +87,7 @@
                 </div>
                 <div class="modal-body">
                     <h2 class="modal-title font-weight-bold text-center" id="exampleModalLabel">Become a member.</h2>
+                    <p class="text-center mt-3">We'll send your Welcome Package straight to your inbox!</p>
                     <form name="registration" method="POST" data-netlify="true"
                         class="container bg-transparent rounded p-3">
                         <div class="form-row py-1">
@@ -135,9 +136,10 @@
             <div class="col-md-6">
                 <h4>Compile</h4>
                 <h2>Your imagination is the limit.</h2>
-                <p>Make your own game, app, website, and much more. We've got Arduino kits for when you're ready to
+                <p>Make your own fun games, apps, websites, and much more. We've got Arduino kits for when you're ready
+                    to
                     expand to
-                    electronics too.
+                    electronics too!
                 </p>
             </div>
             <div class="col-md-6">
@@ -152,13 +154,22 @@
             <div class="col-md-6">
                 <h4>Processing</h4>
                 <h2>A beginner's playground.</h2>
-                <p>Kickstart your coding journey by learning the <a href="https://processing.org/" class="font-weight-bold">Processing</a> programming language with us. Once you've got the fundamentals down pat, you'll be well equipped to branch out and learn other languages too!
+                <p>Kickstart your coding journey by learning the <a href="https://processing.org/"
+                        class="font-weight-bold">Processing</a> language with us. Then make your own app or game with your newly acquired skills and share your creation with everyone on our <a href="https://www.openprocessing.org/user/169324/" class="font-weight-bold">OpenProcessing.org</a> page! Once you've got the
+                    fundamentals down pat, you'll be well equipped to branch out and learn other languages too!
                 </p>
-                <a href="https://www.openprocessing.org/user/169324/" class="btn btn-light border mb-3">We're on
-                    OpenProcessing.org!</a>
+                <a href="https://www.openprocessing.org/user/169324/" class="btn btn-light border mb-3" onmouseover="PlaySound('mySound')" 
+                onmouseout="StopSound('mySound')">Show me your moves!</a>
+                
+
+<audio id='mySound' src='audio/show-me-your-moves.mp3'/>
             </div>
             <div class="col-md-6">
-                <img src="images/projects-thumbnail.png" style="border-radius:10px;width:100%;" />
+                <video class="project-showcase-video" autoplay muted loop>
+                    <source src="video/project-showcase.mp4" type="video/mp4">
+                    
+                    </video >
+                <!-- <img src="images/projects-thumbnail.png" style="border-radius:10px;width:100%;" /> -->
             </div>
         </div>
     </section>
@@ -166,11 +177,12 @@
     <section class="container jumbo-card-white">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <h4>Arduino</h4>                
+                <h4>Arduino</h4>
                 <h2>Break into the physical world.</h2>
-                <p>Use the power of code to control motors, LEDs, and much more to make your own hobbyist electronics with our very own Arduino kits.
+                <p>Use the power of code to control motors, LEDs, and much more to make your own hobbyist electronics
+                    with our very own Arduino kits.
                 </p>
-                <a href="https://www.arduino.cc/" class="btn btn-light border mb-3">Explore Arduino</a>
+                <a href="https://www.arduino.cc/" class="btn btn-light border mb-3">What's Arduino?</a>
             </div>
             <div class="col-md-6">
                 <img src="images/arduino-thumbnail.jpg" style="border-radius:10px;width:100%;" />

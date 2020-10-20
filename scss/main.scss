@@ -55,6 +55,9 @@ section {
     &:nth-of-type(4) h4 {
         color: $belong-color;
     }
+    &:nth-of-type(5) h4 {
+        color: $news-color;
+    }
 }
 
 
@@ -421,6 +424,17 @@ footer {
     font-size: 1rem !important;
     // margin-bottom: 30px;
     font-style: italic;
+}
+
+// video {
+//     width: 100%;
+//     height: auto;
+//   }
+
+.project-showcase-video {
+    width: 100%;
+    height: auto;
+    border-radius: $card-border-radius;
 }
  
 // glitch effect    https://codepen.io/cipherbeta/pen/YLdVjw

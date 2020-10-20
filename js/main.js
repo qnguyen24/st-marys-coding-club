@@ -117,3 +117,17 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+
+// play audio on hover  http://jsfiddle.net/PsyWolf/W3XdA/8/
+
+function PlaySound(soundobj) {
+  var thissound=document.getElementById(soundobj);
+  thissound.play();
+}
+
+function StopSound(soundobj) {
+  var thissound=document.getElementById(soundobj);
+  thissound.pause();
+  thissound.currentTime = 0;
+}
