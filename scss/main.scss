@@ -55,6 +55,7 @@ section {
     &:nth-of-type(4) h4 {
         color: $belong-color;
     }
+
     &:nth-of-type(5) h4 {
         color: $news-color;
     }
@@ -62,8 +63,8 @@ section {
 
 
 
-p, .container li
- {
+p,
+.container li {
     font-family: $body-font;
     font-weight: 300;
     font-size: 1rem;
@@ -162,15 +163,18 @@ ul {
 
 
 .profile-wrapper {
+
     // .profile-overlay {
     //     background: rgb(236, 132, 12);
     // }
     &:nth-of-type(even) .profile-overlay {
         background-color: $learn-color;
     }
+
     &:nth-of-type(odd) .profile-overlay {
         background-color: $sm-yellow;
     }
+
     // &:nth-of-type(1) .profile-overlay {
     //     background-color: $learn-color;
     // }
@@ -198,10 +202,11 @@ ul {
     margin: 10px auto;
     position: relative;
     overflow: hidden;
-    transition: 0.5s ease-in-out; 
+    transition: 0.5s ease-in-out;
     background: #ffffff;
-        box-shadow: 20px 20px 40px #dbdbdb,
-        0 -0 0 #ffffff;   
+    box-shadow: 20px 20px 40px #dbdbdb,
+        0 -0 0 #ffffff;
+
     .portrait {
         border: 5px solid white;
         border-radius: 50%;
@@ -210,11 +215,12 @@ ul {
         height: auto;
         margin-bottom: 3rem !important;
     }
+
     &:hover {
-        
+
         .profile-overlay {
             top: 0;
-        border-radius: 0 0 20px 20px;
+            border-radius: 0 0 20px 20px;
         }
     }
 
@@ -239,6 +245,7 @@ ul {
         font-family: $body-font;
         font-weight: 600;
         font-size: 1rem;
+
         .year {
             font-weight: 300;
             background: white;
@@ -249,6 +256,7 @@ ul {
             font-size: 0.9rem;
             opacity: 0.9;
         }
+
         img {
             width: 50%;
             height: auto;
@@ -265,7 +273,7 @@ ul {
             transform: translate(-50%, -50%);
             text-align: center;
         }
-    }    
+    }
 }
 
 footer {
@@ -377,40 +385,43 @@ footer {
     outline: none;
     font-size: 15px;
     transition: 0.4s;
-  }
-  
-  .active, .accordion:hover {
+}
+
+.active,
+.accordion:hover {
     background-color: $btn-light-bg !important;
     color: white !important;
+
     &:after {
         color: white !important;
     }
-  }
-  
-  .accordion:after {
+}
+
+.accordion:after {
     content: '\002B';
     color: #777;
     font-weight: bold;
     float: right;
     margin-left: 5px;
-  }
-  
-  .active:after {
+}
+
+.active:after {
     content: "\2212";
     color: white;
-  }
-  
-  .panel {
+}
+
+.panel {
     padding: 0 18px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;    
+    transition: max-height 0.2s ease-out;
+
     p {
         font-size: 0.9rem;
         padding: 20px;
     }
-  }
+}
 
 .fa-thumb-tack {
     transform: rotate(45deg);
@@ -436,7 +447,7 @@ footer {
     height: auto;
     border-radius: $card-border-radius;
 }
- 
+
 // glitch effect    https://codepen.io/cipherbeta/pen/YLdVjw
 
 // Here's the meat and potatoes.
@@ -445,7 +456,7 @@ footer {
 directly on our existing text, while
 also setting content to the appropriate
 text set in the data-text attribute. */
-@mixin glitchCopy { 
+@mixin glitchCopy {
     content: attr(data-text);
     position: absolute;
     top: 0;
@@ -455,38 +466,38 @@ text set in the data-text attribute. */
 }
 
 .glitch {
-position: relative;
-color: white;
-font-size: 4em;
-letter-spacing: .5em;
-/* Animation provies a slight random skew. Check bottom of doc
+    position: relative;
+    color: white;
+    font-size: 4em;
+    letter-spacing: .5em;
+    /* Animation provies a slight random skew. Check bottom of doc
 for more information on how to random skew. */
-animation: glitch-skew 1s infinite linear alternate-reverse;
+    animation: glitch-skew 1s infinite linear alternate-reverse;
 
-// Creates a copy before our text. 
-&::before{
-    // Duplicates our text with the mixin.
-    @include glitchCopy;
-    // Scoots text slightly to the left for the color offset.
-    left: 2px;
-    // Creates the color 'shadow' that happens on the glitch.
-    text-shadow: -2px 0 $glitch-1;
-    /* Creates an initial clip for our glitch. This works in
+    // Creates a copy before our text. 
+    &::before {
+        // Duplicates our text with the mixin.
+        @include glitchCopy;
+        // Scoots text slightly to the left for the color offset.
+        left: 2px;
+        // Creates the color 'shadow' that happens on the glitch.
+        text-shadow: -2px 0 $glitch-1;
+        /* Creates an initial clip for our glitch. This works in
     a typical top,right,bottom,left fashion and creates a mask
     to only show a certain part of the glitch at a time. */
-    clip: rect(44px, 450px, 56px, 0);
-    /* Runs our glitch-anim defined below to run in a 5s loop, infinitely,
+        clip: rect(44px, 450px, 56px, 0);
+        /* Runs our glitch-anim defined below to run in a 5s loop, infinitely,
     with an alternating animation to keep things fresh. */
-    animation: glitch-anim 5s infinite linear alternate-reverse;
-}
+        animation: glitch-anim 5s infinite linear alternate-reverse;
+    }
 
-// Creates a copy after our text. Note comments from ::before.
-&::after {
-    @include glitchCopy;
-    left: -2px;
-    text-shadow: -2px 0 $glitch-2, 2px 2px $glitch-1;
-    animation: glitch-anim2 1s infinite linear alternate-reverse;
-}
+    // Creates a copy after our text. Note comments from ::before.
+    &::after {
+        @include glitchCopy;
+        left: -2px;
+        text-shadow: -2px 0 $glitch-2, 2px 2px $glitch-1;
+        animation: glitch-anim2 1s infinite linear alternate-reverse;
+    }
 }
 
 /* Creates an animation with 20 steaps. For each step, it calculates 
@@ -494,32 +505,35 @@ a percentage for the specific step. It then generates a random clip
 box to be used for the random glitch effect. Also adds a very subtle
 skew to change the 'thickness' of the glitch.*/
 @keyframes glitch-anim {
-$steps: 20;
-@for $i from 0 through $steps {
-#{percentage($i*(1/$steps))} {
-  clip: rect(random(100)+px, 9999px, random(100)+px, 0);
-        transform: skew((random(100) / 100) + deg);
-}
-}
+    $steps: 20;
+
+    @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+            clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+            transform: skew((random(100) / 100) + deg);
+        }
+    }
 }
 
 // Same deal, just duplicated for ultra randomness.
 @keyframes glitch-anim2 {
-$steps: 20;
-@for $i from 0 through $steps {
-#{percentage($i*(1/$steps))} {
-  clip: rect(random(100)+px, 9999px, random(100)+px, 0);
-        transform: skew((random(100) / 100) + deg);
-}
-}
+    $steps: 20;
+
+    @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+            clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+            transform: skew((random(100) / 100) + deg);
+        }
+    }
 }
 
 // Does the same deal as before, but now only skews. Used for main text.
 @keyframes glitch-skew {
-$steps: 10;
-@for $i from 0 through $steps {
-#{percentage($i*(1/$steps))} {
-  transform: skew((random(10) - 5) + deg);
-}
-}
+    $steps: 10;
+
+    @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+            transform: skew((random(10) - 5) + deg);
+        }
+    }
 }
