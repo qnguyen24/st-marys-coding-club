@@ -93,7 +93,7 @@ ul {
 .jumbotron {
     // @include bg-image("jumbotron-keyboard-hand-dark.jpg",fixed);
     background: white;
-    @include py(10rem, 0px);
+    @include py(20vh, 0px);
 
     .fa {
         font-size: 20px;
@@ -110,7 +110,7 @@ ul {
 
     p {
         color: #454F5B;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 500;
         max-width: 90%;
     }
@@ -291,23 +291,13 @@ footer {
     .jumbotron {
         @include py(6rem, 0px);
 
-        .fa {
-            font-size: 20px;
-        }
-
         h1 {
             font-size: 5rem;
-            font-weight: 700;
             line-height: 5rem;
-            font-family: $heading-font;
-            margin-bottom: 30px;
-            color: #0e1013;
         }
 
         p {
-            color: #454F5B;
             font-size: 1.2rem;
-            font-weight: 500;
         }
     }
 }
@@ -436,11 +426,6 @@ footer {
     // margin-bottom: 30px;
     font-style: italic;
 }
-
-// video {
-//     width: 100%;
-//     height: auto;
-//   }
 
 .project-showcase-video {
     width: 100%;
