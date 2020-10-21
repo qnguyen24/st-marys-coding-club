@@ -8,6 +8,7 @@
 //     border: 1px solid red;
 // }
 
+
 h2,
 h3,
 h4,
@@ -44,24 +45,33 @@ section {
         font-weight: 700;
     }
 
-    &:nth-of-type(2) h4 {
+    &:nth-of-type(1) h4 {
         color: $learn-color;
     }
 
-    &:nth-of-type(3) h4 {
+    &:nth-of-type(2) h4 {
         color: $create-color;
     }
 
-    &:nth-of-type(4) h4 {
+    &:nth-of-type(3) h4 {
         color: $belong-color;
     }
 
-    &:nth-of-type(5) h4 {
+    &:nth-of-type(4) h4 {
         color: $news-color;
     }
 }
 
 
+.section-wrapper {
+    padding: 0 0.75rem;
+    section {
+        // padding: auto 0rem auto 0rem;
+        // padding: 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
 
 p,
 .container li {
@@ -286,6 +296,12 @@ footer {
 @media (min-width: 992px) {
     body {
         font-size: 18px;
+    }
+
+    .section-wrapper {
+        section {
+            padding: 3rem;
+        }
     }
 
     .jumbotron {
